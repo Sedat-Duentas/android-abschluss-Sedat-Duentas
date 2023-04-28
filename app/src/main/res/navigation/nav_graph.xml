@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.laenderapp.HomeFragment"
+        android:label="HomeFragment" >
+        <action
+            android:id="@+id/action_homeFragment_to_gameSelectionFragment"
+            app:destination="@id/gameSelectionFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/gameSelectionFragment"
+        android:name="com.example.laenderapp.GameSelectionFragment"
+        android:label="GameSelectionFragment" >
+        <action
+            android:id="@+id/action_gameSelectionFragment_to_continentsFragment"
+            app:destination="@id/continentsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/continentsFragment"
+        android:name="com.example.laenderapp.ContinentsFragment"
+        android:label="ContinentsFragment" >
+        <action
+            android:id="@+id/action_continentsFragment_to_quizFragment"
+            app:destination="@id/quizFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/quizFragment"
+        android:name="com.example.laenderapp.QuizFragment"
+        android:label="QuizFragment" />
+</navigation>
