@@ -11,50 +11,21 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".HomeFragment">
-
-        <com.google.android.material.card.MaterialCardView
-            android:id="@+id/mc_appName"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:backgroundTint="@color/purple_200"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
-
-            <androidx.constraintlayout.widget.ConstraintLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-                <TextView
-                    android:id="@+id/tv_name"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="123dp"
-                    android:layout_marginEnd="123dp"
-                    android:text="Geo-Quiz"
-                    android:textSize="30dp"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
-            </androidx.constraintlayout.widget.ConstraintLayout>
-
-        </com.google.android.material.card.MaterialCardView>
+        android:background="@color/orange"
+        tools:context=".ui.HomeFragment">
 
         <ImageView
             android:id="@+id/background_image"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:adjustViewBounds="true"
-            android:alpha="0.4"
             android:cropToPadding="true"
             android:scaleType="center"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            tools:srcCompat="@drawable/world" />
+            app:srcCompat="@drawable/geoquiz" />
 
         <com.google.android.material.card.MaterialCardView
             android:id="@+id/home_cardView_newGame"
@@ -63,6 +34,7 @@
             android:layout_marginStart="55dp"
             android:layout_marginEnd="56dp"
             android:layout_marginBottom="56dp"
+            android:backgroundTint="@color/grey_light"
             app:layout_constraintBottom_toTopOf="@+id/home_cardView_continueGame"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent">
@@ -110,6 +82,7 @@
             android:layout_marginStart="55dp"
             android:layout_marginEnd="56dp"
             android:layout_marginBottom="56dp"
+            android:backgroundTint="@color/grey_light"
             app:layout_constraintBottom_toTopOf="@+id/home_cardView_finishGame"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
@@ -157,6 +130,7 @@
             android:layout_marginStart="55dp"
             android:layout_marginEnd="56dp"
             android:layout_marginBottom="182dp"
+            android:backgroundTint="@color/grey_light"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent">

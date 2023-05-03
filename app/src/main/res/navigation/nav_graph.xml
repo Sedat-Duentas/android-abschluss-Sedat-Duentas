@@ -6,30 +6,56 @@
 
     <fragment
         android:id="@+id/homeFragment"
-        android:name="com.example.laenderapp.HomeFragment"
+        android:name="com.example.laenderapp.ui.HomeFragment"
         android:label="HomeFragment" >
         <action
             android:id="@+id/action_homeFragment_to_gameSelectionFragment"
             app:destination="@id/gameSelectionFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_quizFragment"
+            app:destination="@id/quizFragment" />
     </fragment>
     <fragment
         android:id="@+id/gameSelectionFragment"
-        android:name="com.example.laenderapp.GameSelectionFragment"
+        android:name="com.example.laenderapp.ui.GameSelectionFragment"
         android:label="GameSelectionFragment" >
         <action
             android:id="@+id/action_gameSelectionFragment_to_continentsFragment"
             app:destination="@id/continentsFragment" />
+        <action
+            android:id="@+id/action_gameSelectionFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
     </fragment>
     <fragment
         android:id="@+id/continentsFragment"
-        android:name="com.example.laenderapp.ContinentsFragment"
+        android:name="com.example.laenderapp.ui.ContinentsFragment"
         android:label="ContinentsFragment" >
         <action
             android:id="@+id/action_continentsFragment_to_quizFragment"
             app:destination="@id/quizFragment" />
+        <action
+            android:id="@+id/action_continentsFragment_to_gameSelectionFragment"
+            app:destination="@id/gameSelectionFragment" />
+        <action
+            android:id="@+id/action_continentsFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+        <action
+            android:id="@+id/action_continentsFragment_to_quizCityFragment"
+            app:destination="@id/quizCityFragment" />
     </fragment>
     <fragment
         android:id="@+id/quizFragment"
-        android:name="com.example.laenderapp.QuizFragment"
-        android:label="QuizFragment" />
+        android:name="com.example.laenderapp.ui.QuizFragment"
+        android:label="QuizFragment" >
+        <action
+            android:id="@+id/action_quizFragment_to_continentsFragment"
+            app:destination="@id/continentsFragment" />
+        <action
+            android:id="@+id/action_quizFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/quizCityFragment"
+        android:name="com.example.laenderapp.ui.QuizCityFragment"
+        android:label="QuizCityFragment" />
 </navigation>

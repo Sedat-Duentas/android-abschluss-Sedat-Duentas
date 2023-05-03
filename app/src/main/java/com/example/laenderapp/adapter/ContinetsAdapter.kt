@@ -4,10 +4,9 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.navigation.findNavController
 import androidx.recyclerview.widget.RecyclerView
-import com.example.laenderapp.ContinentsFragmentDirections
-import com.example.laenderapp.data.model.Continent
-import com.example.laenderapp.databinding.FragmentContinentsBinding
+import com.example.laenderapp.data.datamodels.Continent
 import com.example.laenderapp.databinding.ItemLayoutBinding
+import com.example.laenderapp.ui.ContinentsFragmentDirections
 
 class ContinetsAdapter (
     private val dataset: List<Continent>

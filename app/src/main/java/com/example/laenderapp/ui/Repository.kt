@@ -1,7 +1,7 @@
-package com.example.laenderapp.data
+package com.example.laenderapp.ui
 
 import com.example.laenderapp.R
-import com.example.laenderapp.data.model.Continent
+import com.example.laenderapp.data.datamodels.Continent
 
 class Repository {
 
