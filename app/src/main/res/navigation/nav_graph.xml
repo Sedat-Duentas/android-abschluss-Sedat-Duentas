@@ -60,7 +60,7 @@
         android:label="QuizCityFragment" />
     <fragment
         android:id="@+id/logFragment"
-        android:name="com.example.laenderapp.LogFragment"
+        android:name="com.example.laenderapp.ui.LogFragment"
         android:label="LogFragment" >
         <action
             android:id="@+id/action_logFragment_to_homeFragment"

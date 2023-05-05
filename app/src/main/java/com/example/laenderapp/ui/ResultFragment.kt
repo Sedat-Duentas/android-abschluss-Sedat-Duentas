@@ -1,4 +1,4 @@
-package com.example.laenderapp
+package com.example.laenderapp.ui
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
