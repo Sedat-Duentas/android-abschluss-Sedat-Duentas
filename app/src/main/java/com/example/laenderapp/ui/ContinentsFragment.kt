@@ -8,6 +8,7 @@ import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
 import androidx.navigation.fragment.findNavController
 import com.example.laenderapp.R
+import com.example.laenderapp.adapter.ContinetsAdapter
 import com.example.laenderapp.databinding.FragmentContinentsBinding
 
 class ContinentsFragment : Fragment() {
@@ -23,6 +24,16 @@ class ContinentsFragment : Fragment() {
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+
+        val recyclerView = binding.recyclerViewHome
+
+        val continents = Repository().loadContinents()
+
+        recyclerView.adapter = ContinetsAdapter(continents)
+
+        recyclerView.setHasFixedSize(true)
+
+
         binding.mcArrowLeft.setOnClickListener {
             findNavController().navigate(ContinentsFragmentDirections.actionContinentsFragmentToGameSelectionFragment())
         }

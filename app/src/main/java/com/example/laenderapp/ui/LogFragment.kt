@@ -7,7 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
 import androidx.navigation.fragment.findNavController
-import com.example.laenderapp.LogFragmentDirections
+
 import com.example.laenderapp.R
 import com.example.laenderapp.databinding.FragmentLogBinding
 

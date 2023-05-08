@@ -1,5 +1,9 @@
 <resources>
     <string name="app_name">LaenderApp</string>
     <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="europe">Europa</string>
+    <string name="asia">Asien</string>
+    <string name="africa">Afrika</string>
+    <string name="america">Amerika</string>
+    <string name="australia">Australien</string>
 </resources>

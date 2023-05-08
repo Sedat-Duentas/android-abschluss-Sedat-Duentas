@@ -21,6 +21,11 @@ class ContinetsAdapter (
 
     override fun onBindViewHolder(holder: ItemViewHolder, position: Int) {
         val item = dataset[position]
+
+        holder.binding.categoryText.setText(item.stringResource)
+
+
+
         holder.binding.categoryLayout.setBackgroundResource(item.imageResource)
         holder.binding.categoryCard.setOnClickListener {
             holder.binding.categoryCard.findNavController()
