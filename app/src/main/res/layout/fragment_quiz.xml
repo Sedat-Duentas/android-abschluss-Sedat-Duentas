@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout xmlns:android="http://schemas.android.com/apk/res/android"
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
 
@@ -60,107 +61,107 @@
         </androidx.constraintlayout.widget.ConstraintLayout>
 
         <ImageView
-            android:id="@+id/imageView"
+            android:id="@+id/iv_quiz_flag"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="32dp"
-            android:layout_marginTop="100dp"
+            android:layout_marginTop="120dp"
             android:layout_marginEnd="32dp"
             android:adjustViewBounds="true"
-            tools:src="@drawable/deutschland"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            tools:src="@drawable/deutschland" />
 
         <ProgressBar
             android:id="@+id/progressBar"
             style="?android:attr/progressBarStyleHorizontal"
             android:layout_width="273dp"
             android:layout_height="25dp"
-            android:layout_marginTop="28dp"
+            android:layout_marginTop="64dp"
             android:layout_weight="1"
             android:indeterminate="false"
             android:max="10"
             android:progress="0"
-            app:layout_constraintStart_toStartOf="@+id/imageView"
-            app:layout_constraintTop_toBottomOf="@+id/imageView" />
+            app:layout_constraintStart_toStartOf="@+id/iv_quiz_flag"
+            app:layout_constraintTop_toBottomOf="@+id/iv_quiz_flag" />
 
         <TextView
             android:id="@+id/tvProgress"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="12dp"
-            android:layout_marginEnd="32dp"
+            android:layout_marginTop="48dp"
+            android:layout_marginEnd="28dp"
             android:gravity="center"
             android:padding="16dp"
+            android:text="0/10"
             android:textColor="@color/black"
             android:textColorHint="@color/black"
             android:textSize="16dp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imageView"
-            tools:text="0/10" />
+            app:layout_constraintTop_toBottomOf="@+id/iv_quiz_flag" />
 
         <TextView
             android:id="@+id/textView"
             android:layout_width="346dp"
             android:layout_height="208dp"
             android:layout_marginStart="32dp"
-            android:layout_marginTop="100dp"
+            android:layout_marginTop="120dp"
             android:layout_marginEnd="32dp"
             android:backgroundTint="@color/orange"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="56dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            tools:text="Berlin"
-            android:textSize="56dp"
-            android:textColor="@color/white"
-            android:gravity="center"/>
+            tools:text="Berlin" />
+
+        <Button
+            android:id="@+id/btn2"
+            android:layout_width="168dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="65dp"
+            android:layout_marginEnd="28dp"
+            android:backgroundTint="@color/orange"
+            android:text="Land2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/progressBar" />
 
         <Button
             android:id="@+id/btn1"
             android:layout_width="168dp"
             android:layout_height="100dp"
             android:layout_marginStart="32dp"
-            android:layout_marginTop="77dp"
-            android:text="Land1"
+            android:layout_marginTop="65dp"
             android:backgroundTint="@color/orange"
+            android:text="Land1"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imageView" />
+            app:layout_constraintTop_toBottomOf="@+id/progressBar" />
 
         <Button
-            android:id="@+id/btn2"
+            android:id="@+id/btn4"
             android:layout_width="168dp"
             android:layout_height="100dp"
-            android:layout_marginTop="77dp"
-            android:layout_marginEnd="32dp"
+            android:layout_marginTop="28dp"
+            android:layout_marginEnd="28dp"
             android:backgroundTint="@color/orange"
-            android:text="Land2"
+            android:text="Land4"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imageView" />
+            app:layout_constraintTop_toBottomOf="@+id/btn2" />
 
         <Button
             android:id="@+id/btn3"
             android:layout_width="168dp"
             android:layout_height="100dp"
             android:layout_marginStart="32dp"
-            android:layout_marginBottom="112dp"
+            android:layout_marginTop="28dp"
             android:backgroundTint="@color/orange"
             android:text="Land3"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent" />
-
-        <Button
-            android:id="@+id/btn4"
-            android:layout_width="168dp"
-            android:layout_height="100dp"
-            android:layout_marginEnd="32dp"
-            android:layout_marginBottom="112dp"
-            android:backgroundTint="@color/orange"
-            android:text="Land4"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent" />
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn1" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

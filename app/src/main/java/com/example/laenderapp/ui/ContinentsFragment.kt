@@ -33,7 +33,6 @@ class ContinentsFragment : Fragment() {
 
         recyclerView.setHasFixedSize(true)
 
-
         binding.mcArrowLeft.setOnClickListener {
             findNavController().navigate(ContinentsFragmentDirections.actionContinentsFragmentToGameSelectionFragment())
         }
@@ -42,8 +41,5 @@ class ContinentsFragment : Fragment() {
             findNavController().navigate(ContinentsFragmentDirections.actionContinentsFragmentToHomeFragment())
         }
 
-        binding.recyclerViewHome.setOnClickListener {
-            findNavController().navigate(ContinentsFragmentDirections.actionContinentsFragmentToQuizFragment())
-        }
     }
 }

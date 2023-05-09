@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
+import androidx.navigation.fragment.findNavController
 import com.example.laenderapp.R
 import com.example.laenderapp.databinding.FragmentQuizBinding
 
@@ -20,6 +21,18 @@ class QuizFragment : Fragment() {
     ): View? {
         binding = DataBindingUtil.inflate(inflater, R.layout.fragment_quiz, container, false)
         return binding.root
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        binding.mcArrowLeft.setOnClickListener {
+            findNavController().navigate(QuizFragmentDirections.actionQuizFragmentToContinentsFragment())
+        }
+
+        binding.mcQuizHome.setOnClickListener {
+            findNavController().navigate(QuizFragmentDirections.actionQuizFragmentToHomeFragment())
+        }
+
+        binding.ivQuizFlag.setImageResource(R.drawable.deutschland)
     }
 
 }
