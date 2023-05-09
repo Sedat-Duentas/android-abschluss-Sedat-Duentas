@@ -1,9 +1,9 @@
 <resources>
     <string name="app_name">LaenderApp</string>
     <!-- TODO: Remove or change this placeholder text -->
-    <string name="europe">Europa</string>
-    <string name="asia">Asien</string>
-    <string name="africa">Afrika</string>
-    <string name="america">Amerika</string>
-    <string name="australia">Australien</string>
+    <string name="europe">EUROPA</string>
+    <string name="asia">ASIEN</string>
+    <string name="africa">AFRIKA</string>
+    <string name="america">AMERIKA</string>
+    <string name="australia">AUSTRALIEN</string>
 </resources>

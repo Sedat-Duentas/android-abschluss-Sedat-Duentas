@@ -22,8 +22,7 @@ class ContinetsAdapter (
 
     override fun onBindViewHolder(holder: ItemViewHolder, position: Int) {
         val item = dataset[position]
-
-        holder.binding.categoryLayout.setBackgroundResource(item.imageResource)
+        
         holder.binding.imageView2.setImageResource(item.imageResource)
         holder.binding.categoryText.setText(item.stringResource)
 

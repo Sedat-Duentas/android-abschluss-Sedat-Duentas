@@ -41,12 +41,13 @@
             android:layout_width="300dp"
             android:layout_height="80dp"
             android:layout_marginStart="55dp"
-            android:layout_marginTop="56dp"
             android:layout_marginEnd="56dp"
+            android:layout_marginBottom="32dp"
             android:backgroundTint="@color/white"
+            app:layout_constraintBottom_toTopOf="@+id/home_cardView_continueGame"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView6">
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent">
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
@@ -91,11 +92,12 @@
             android:layout_marginEnd="56dp"
             android:layout_marginBottom="42dp"
             android:backgroundTint="@color/white"
-            app:layout_constraintBottom_toTopOf="@+id/home_cardView_finishGame"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/home_cardView_newGame">
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.5">
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
@@ -137,12 +139,13 @@
             android:layout_width="300dp"
             android:layout_height="80dp"
             android:layout_marginStart="55dp"
+            android:layout_marginTop="32dp"
             android:layout_marginEnd="56dp"
-            android:layout_marginBottom="200dp"
             android:backgroundTint="@color/white"
-            app:layout_constraintBottom_toBottomOf="@+id/background_image"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent">
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/home_cardView_continueGame">
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
