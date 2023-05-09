@@ -14,6 +14,9 @@
         <action
             android:id="@+id/action_homeFragment_to_quizFragment"
             app:destination="@id/quizFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_logFragment"
+            app:destination="@id/logFragment" />
     </fragment>
     <fragment
         android:id="@+id/gameSelectionFragment"

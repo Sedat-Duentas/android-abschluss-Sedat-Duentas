@@ -23,6 +23,11 @@ class HomeFragment : Fragment() {
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+
+        binding.accountIcon.setOnClickListener {
+            findNavController().navigate(HomeFragmentDirections.actionHomeFragmentToLogFragment())
+        }
+
         binding.homeCardViewNewGame.setOnClickListener {
             findNavController().navigate(HomeFragmentDirections.actionHomeFragmentToGameSelectionFragment())
         }

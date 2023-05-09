@@ -37,6 +37,26 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <com.google.android.material.card.MaterialCardView
+            android:id="@+id/accountIcon"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/background_image">
+
+            <ImageView
+                android:id="@+id/imageView9"
+                android:layout_width="48dp"
+                android:layout_height="49dp"
+                app:srcCompat="@drawable/accountnew"
+                android:background="@color/white"
+                tools:layout_editor_absoluteX="347dp"
+                tools:layout_editor_absoluteY="16dp">
+            </ImageView>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
             android:id="@+id/home_cardView_newGame"
             android:layout_width="300dp"
             android:layout_height="80dp"
@@ -85,10 +105,9 @@
 
         <com.google.android.material.card.MaterialCardView
             android:id="@+id/home_cardView_continueGame"
-            android:layout_width="300dp"
+            android:layout_width="0dp"
             android:layout_height="80dp"
             android:layout_marginStart="55dp"
-            android:layout_marginTop="35dp"
             android:layout_marginEnd="56dp"
             android:layout_marginBottom="42dp"
             android:backgroundTint="@color/white"
@@ -181,16 +200,6 @@
                 app:srcCompat="@drawable/shutdown" />
 
         </com.google.android.material.card.MaterialCardView>
-
-        <ImageView
-            android:id="@+id/imageView7"
-            android:layout_width="41dp"
-            android:layout_height="34dp"
-            app:layout_constraintBottom_toTopOf="@+id/textView6"
-            app:layout_constraintEnd_toEndOf="@+id/background_image"
-            app:layout_constraintHorizontal_bias="0.956"
-            app:layout_constraintStart_toStartOf="@+id/background_image"
-            app:srcCompat="@drawable/settings" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
