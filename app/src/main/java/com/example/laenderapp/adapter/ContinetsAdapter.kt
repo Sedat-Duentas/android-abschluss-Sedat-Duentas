@@ -9,29 +9,36 @@ import com.example.laenderapp.data.datamodels.Continent
 import com.example.laenderapp.databinding.ItemLayoutBinding
 import com.example.laenderapp.ui.ContinentsFragmentDirections
 
+// Die Liste von Kontinenten wird übergeben und RecyclerView wird vorbereitet
 class ContinetsAdapter (
     private val dataset: List<Continent>
 ) : RecyclerView.Adapter<ContinetsAdapter.ItemViewHolder>() {
 
+    // Der Viewholder weiß welche Teile des Layouts beim Recycling angepasst werden
     class ItemViewHolder(val binding: ItemLayoutBinding) : RecyclerView.ViewHolder(binding.root)
 
+    // Hier werden neue Viewholder erstellt
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ItemViewHolder {
+        // Das Itemlayout wird gebaut
         val binding = ItemLayoutBinding.inflate(LayoutInflater.from(parent.context), parent, false)
+        // Und in einem Viewholder zurückgegeben
         return ItemViewHolder(binding)
     }
 
+    // Hier wird die "leere" liste mit den korrekten daten befüllt
     override fun onBindViewHolder(holder: ItemViewHolder, position: Int) {
         val item = dataset[position]
         
-        holder.binding.imageView2.setImageResource(item.imageResource)
-        holder.binding.categoryText.setText(item.stringResource)
+        holder.binding.ivItem.setImageResource(item.imageResource)
+        holder.binding.tvItem.setText(item.stringResource)
 
-        holder.binding.categoryCard.setOnClickListener {
-            holder.binding.categoryCard.findNavController()
+        holder.binding.mcItem.setOnClickListener {
+            holder.binding.mcItem.findNavController()
                 .navigate(ContinentsFragmentDirections.actionContinentsFragmentToQuizFragment())
         }
     }
 
+    // Damit der Layoutmanager weiß wie lang die Liste ist
     override fun getItemCount(): Int {
         return dataset.size
     }

@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
+    <!-- Hier zeigt er DataBinding -->
     <data>
 
     </data>
@@ -14,16 +15,18 @@
         android:background="@color/orange_light"
         tools:context=".ui.LogFragment">
 
+        <!-- Eine ImageView wird erstellt -->
         <ImageView
-            android:id="@+id/imageView6"
+            android:id="@+id/iv_background_image"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:src="@drawable/earth"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
+        <!-- Eine TextView wird erstellt -->
         <TextView
-            android:id="@+id/textView5"
+            android:id="@+id/tv_log_header"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="48dp"
@@ -33,14 +36,17 @@
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.498"
-            app:layout_constraintStart_toStartOf="@+id/imageView6"
+            app:layout_constraintStart_toStartOf="@+id/iv_background_image"
             app:layout_constraintTop_toTopOf="parent" />
 
+        <!-- Ein constraintlayout wird als Grundlage erstellt -->
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
+            <!-- Eine MaterialCardView wird erstellt -->
             <com.google.android.material.card.MaterialCardView
+                android:id="@+id/mc_log"
                 android:layout_width="366dp"
                 android:layout_height="270dp"
                 android:layout_marginStart="23dp"
@@ -54,12 +60,14 @@
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintVertical_bias="0.5">
 
+                <!-- Ein constraintlayout innerhalb der MaterialCardView wird als erstellt -->
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
 
+                    <!-- Eine TextView wird erstellt -->
                     <TextView
-                        android:id="@+id/textView10"
+                        android:id="@+id/tv_greeting"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="15dp"
@@ -74,6 +82,7 @@
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent" />
 
+                    <!-- Eine TextInputLayout wird erstellt -->
                     <com.google.android.material.textfield.TextInputLayout
                         android:id="@+id/textInputLayout"
                         android:layout_width="330dp"
@@ -82,20 +91,23 @@
                         android:layout_marginTop="15dp"
                         android:layout_marginEnd="25dp"
                         android:layout_marginBottom="36dp"
-                        app:layout_constraintBottom_toTopOf="@+id/button2"
+                        app:layout_constraintBottom_toTopOf="@+id/log_btn"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@+id/textView10">
+                        app:layout_constraintTop_toBottomOf="@+id/tv_greeting">
 
+                        <!-- Eine TextInputEditText wird erstellt -->
                         <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/textInputEditText"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:hint="schreibe hier deinen Namen" />
 
                     </com.google.android.material.textfield.TextInputLayout>
 
+                    <!-- Ein Button wird erstellt -->
                     <Button
-                        android:id="@+id/button2"
+                        android:id="@+id/log_btn"
                         android:layout_width="330dp"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="10dp"

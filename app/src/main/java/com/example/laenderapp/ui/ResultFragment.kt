@@ -10,6 +10,7 @@ import androidx.navigation.fragment.findNavController
 import com.example.laenderapp.R
 import com.example.laenderapp.databinding.FragmentResultBinding
 
+// Für Notizen siehe HomeFragment
 class ResultFragment : Fragment() {
 
     private lateinit var binding: FragmentResultBinding

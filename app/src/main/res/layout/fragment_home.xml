@@ -4,6 +4,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <!-- Für Notizen siehe fragment_log -->
     <data>
 
     </data>
@@ -15,7 +16,7 @@
         tools:context=".ui.HomeFragment">
 
         <ImageView
-            android:id="@+id/background_image"
+            android:id="@+id/iv_home_background_image"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:src="@drawable/earth"
@@ -23,7 +24,7 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
-            android:id="@+id/textView6"
+            android:id="@+id/tv_selection_header"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="48dp"
@@ -33,19 +34,19 @@
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.497"
-            app:layout_constraintStart_toStartOf="@+id/background_image"
+            app:layout_constraintStart_toStartOf="@+id/iv_home_background_image"
             app:layout_constraintTop_toTopOf="parent" />
 
         <com.google.android.material.card.MaterialCardView
-            android:id="@+id/accountIcon"
+            android:id="@+id/mc_home_account_image"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_margin="16dp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/background_image">
+            app:layout_constraintTop_toTopOf="@+id/iv_home_background_image">
 
             <ImageView
-                android:id="@+id/imageView9"
+                android:id="@+id/iv_home_account_image"
                 android:layout_width="48dp"
                 android:layout_height="49dp"
                 app:srcCompat="@drawable/accountnew"
@@ -57,14 +58,14 @@
         </com.google.android.material.card.MaterialCardView>
 
         <com.google.android.material.card.MaterialCardView
-            android:id="@+id/home_cardView_newGame"
+            android:id="@+id/mc_home_newGame"
             android:layout_width="300dp"
             android:layout_height="80dp"
             android:layout_marginStart="55dp"
             android:layout_marginEnd="56dp"
             android:layout_marginBottom="32dp"
             android:backgroundTint="@color/white"
-            app:layout_constraintBottom_toTopOf="@+id/home_cardView_continueGame"
+            app:layout_constraintBottom_toTopOf="@+id/mc_home_continueGame"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent">
@@ -104,7 +105,7 @@
         </com.google.android.material.card.MaterialCardView>
 
         <com.google.android.material.card.MaterialCardView
-            android:id="@+id/home_cardView_continueGame"
+            android:id="@+id/mc_home_continueGame"
             android:layout_width="0dp"
             android:layout_height="80dp"
             android:layout_marginStart="55dp"
@@ -154,7 +155,7 @@
         </com.google.android.material.card.MaterialCardView>
 
         <com.google.android.material.card.MaterialCardView
-            android:id="@+id/home_cardView_finishGame"
+            android:id="@+id/cv_home_finishGame"
             android:layout_width="300dp"
             android:layout_height="80dp"
             android:layout_marginStart="55dp"
@@ -164,7 +165,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/home_cardView_continueGame">
+            app:layout_constraintTop_toBottomOf="@+id/mc_home_continueGame">
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
@@ -185,19 +186,19 @@
                     app:layout_constraintTop_toTopOf="parent"
                     app:layout_constraintVertical_bias="0.0" />
 
-            </androidx.constraintlayout.widget.ConstraintLayout>
+                <ImageView
+                    android:id="@+id/iv_finishGame_logo"
+                    android:layout_width="31dp"
+                    android:layout_height="34dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="23dp"
+                    android:layout_marginBottom="23dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/shutdown" />
 
-            <ImageView
-                android:id="@+id/iv_finishGame_logo"
-                android:layout_width="31dp"
-                android:layout_height="34dp"
-                android:layout_marginStart="16dp"
-                android:layout_marginTop="23dp"
-                android:layout_marginBottom="23dp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@drawable/shutdown" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
 
         </com.google.android.material.card.MaterialCardView>
 

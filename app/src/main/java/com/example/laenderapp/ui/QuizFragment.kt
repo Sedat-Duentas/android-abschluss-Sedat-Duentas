@@ -10,7 +10,7 @@ import androidx.navigation.fragment.findNavController
 import com.example.laenderapp.R
 import com.example.laenderapp.databinding.FragmentQuizBinding
 
-
+// Für Notizen siehe HomeFragment
 class QuizFragment : Fragment() {
     private lateinit var binding: FragmentQuizBinding
 
@@ -24,11 +24,11 @@ class QuizFragment : Fragment() {
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        binding.mcArrowLeft.setOnClickListener {
+        binding.mcQuizCityArrowLeft.setOnClickListener {
             findNavController().navigate(QuizFragmentDirections.actionQuizFragmentToContinentsFragment())
         }
 
-        binding.mcQuizHome.setOnClickListener {
+        binding.mcQuizCityHome.setOnClickListener {
             findNavController().navigate(QuizFragmentDirections.actionQuizFragmentToHomeFragment())
         }
 

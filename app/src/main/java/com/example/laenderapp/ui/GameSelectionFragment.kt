@@ -10,6 +10,7 @@ import androidx.navigation.fragment.findNavController
 import com.example.laenderapp.R
 import com.example.laenderapp.databinding.FragmentGameSelectionBinding
 
+// Für Notizen siehe HomeFragment
 class GameSelectionFragment : Fragment() {
 
     private lateinit var binding: FragmentGameSelectionBinding
@@ -36,7 +37,7 @@ class GameSelectionFragment : Fragment() {
             findNavController().navigate(GameSelectionFragmentDirections.actionGameSelectionFragmentToContinentsFragment())
         }
 
-        binding.mcArrowLeft.setOnClickListener {
+        binding.mcQuizCityArrowLeft.setOnClickListener {
             findNavController().navigate(GameSelectionFragmentDirections.actionGameSelectionFragmentToHomeFragment())
         }
     }

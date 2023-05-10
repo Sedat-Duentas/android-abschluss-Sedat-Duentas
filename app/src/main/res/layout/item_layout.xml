@@ -4,6 +4,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
+    <!-- Für Notizen siehe fragment_log -->
     <data>
 
     </data>
@@ -13,7 +14,7 @@
         android:layout_height="wrap_content">
 
         <com.google.android.material.card.MaterialCardView
-            android:id="@+id/category_card"
+            android:id="@+id/mc_item"
             android:layout_width="215dp"
             android:layout_height="200dp"
             android:layout_marginStart="42dp"
@@ -30,12 +31,12 @@
             app:strokeWidth="10dp">
 
             <androidx.constraintlayout.widget.ConstraintLayout
-                android:id="@+id/category_layout"
+                android:id="@+id/item_constrainlayout"
                 android:layout_width="match_parent"
                 android:layout_height="190dp">
 
                 <TextView
-                    android:id="@+id/category_text"
+                    android:id="@+id/tv_item"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="107dp"
@@ -52,7 +53,7 @@
                     tools:text="EUROPA" />
 
                 <ImageView
-                    android:id="@+id/imageView2"
+                    android:id="@+id/iv_item"
                     android:layout_width="306dp"
                     android:layout_height="137dp"
                     android:layout_marginStart="10dp"
@@ -63,9 +64,11 @@
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.5"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/category_text"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_item"
                     tools:srcCompat="@drawable/europe" />
+
             </androidx.constraintlayout.widget.ConstraintLayout>
+
         </com.google.android.material.card.MaterialCardView>
 
     </androidx.constraintlayout.widget.ConstraintLayout>

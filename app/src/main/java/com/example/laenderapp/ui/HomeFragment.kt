@@ -11,28 +11,33 @@ import com.example.laenderapp.R
 import com.example.laenderapp.databinding.FragmentHomeBinding
 
 class HomeFragment : Fragment() {
+    //wir nutzen binding für unser fragment und deklarieren eine leere variable vom Typ FragmentHomeBinding
     private lateinit var binding: FragmentHomeBinding
 
+    //in der onCreateView wird das layout grob erstellt, container, größe etc
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
+        //hier setzten/laden wir auf die leere erstellte variable das richtige Layout
         binding = DataBindingUtil.inflate(inflater, R.layout.fragment_home, container, false)
         return binding.root
     }
 
+    //in der onViewCreated greifen wir auf das layout zu und befüllen es mit den korrekten Daten
+    //wir benutzen den navcontroller um unsere navigation aus dem nav_graph durchzuführen
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
 
-        binding.accountIcon.setOnClickListener {
+        binding.mcHomeAccountImage.setOnClickListener {
             findNavController().navigate(HomeFragmentDirections.actionHomeFragmentToLogFragment())
         }
 
-        binding.homeCardViewNewGame.setOnClickListener {
+        binding.mcHomeNewGame.setOnClickListener {
             findNavController().navigate(HomeFragmentDirections.actionHomeFragmentToGameSelectionFragment())
         }
 
-        binding.homeCardViewContinueGame.setOnClickListener {
+        binding.mcHomeContinueGame.setOnClickListener {
             findNavController().navigate(HomeFragmentDirections.actionHomeFragmentToQuizFragment())
         }
     }

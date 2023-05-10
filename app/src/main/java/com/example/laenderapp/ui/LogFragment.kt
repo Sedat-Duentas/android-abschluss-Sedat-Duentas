@@ -11,6 +11,7 @@ import androidx.navigation.fragment.findNavController
 import com.example.laenderapp.R
 import com.example.laenderapp.databinding.FragmentLogBinding
 
+// Für Notizen siehe HomeFragment
 class LogFragment : Fragment() {
     private lateinit var binding: FragmentLogBinding
 
@@ -24,7 +25,7 @@ class LogFragment : Fragment() {
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        binding.button2.setOnClickListener {
+        binding.logBtn.setOnClickListener {
             findNavController().navigate(LogFragmentDirections.actionLogFragmentToHomeFragment())
         }
     }

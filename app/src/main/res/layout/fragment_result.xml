@@ -4,6 +4,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <!-- Für Notizen siehe fragment_log -->
     <data>
 
     </data>
@@ -15,7 +16,7 @@
         tools:context=".ui.ResultFragment">
 
         <ImageView
-            android:id="@+id/imageView8"
+            android:id="@+id/iv_result_image"
             android:layout_width="315dp"
             android:layout_height="328dp"
             android:layout_marginStart="31dp"
@@ -27,7 +28,7 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
-            android:id="@+id/textView8"
+            android:id="@+id/tv_result_congratulation"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="117dp"
@@ -37,13 +38,13 @@
             android:textColor="@color/black"
             android:textSize="32dp"
             android:textStyle="bold"
-            app:layout_constraintBottom_toTopOf="@+id/textView9"
+            app:layout_constraintBottom_toTopOf="@+id/tv_result_name"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent" />
 
         <TextView
-            android:id="@+id/textView9"
+            android:id="@+id/tv_result_name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="56dp"
@@ -53,13 +54,13 @@
             android:textColor="@color/black"
             android:textSize="32dp"
             android:textStyle="bold"
-            app:layout_constraintBottom_toTopOf="@+id/textView11"
+            app:layout_constraintBottom_toTopOf="@+id/tv_result_points"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent" />
 
         <TextView
-            android:id="@+id/textView11"
+            android:id="@+id/tv_result_points"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="42dp"

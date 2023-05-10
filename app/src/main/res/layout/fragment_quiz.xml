@@ -4,6 +4,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <!-- Für Notizen siehe fragment_log -->
     <data>
 
     </data>
@@ -13,20 +14,16 @@
         android:layout_height="match_parent"
         tools:context=".ui.QuizFragment">
 
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_margin="16dp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
-
             <com.google.android.material.card.MaterialCardView
-                android:id="@+id/mc_arrow_left"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:id="@+id/mc_quiz_city_arrow_left"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="16dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
 
                 <ImageView
-                    android:id="@+id/imageView3"
+                    android:id="@+id/iv_quiz_city_arrow_left"
                     android:layout_width="48dp"
                     android:layout_height="49dp"
                     app:srcCompat="@drawable/arrowleft"
@@ -35,30 +32,22 @@
 
             </com.google.android.material.card.MaterialCardView>
 
-        </androidx.constraintlayout.widget.ConstraintLayout>
-
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_margin="16dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
-
             <com.google.android.material.card.MaterialCardView
-                android:id="@+id/mc_quiz_home"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:id="@+id/mc_quiz_city_home"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
 
                 <ImageView
-                    android:id="@+id/imageView4"
+                    android:id="@+id/iv_quiz_city_home"
                     android:layout_width="48dp"
                     android:layout_height="49dp"
                     app:srcCompat="@drawable/home">
                 </ImageView>
 
             </com.google.android.material.card.MaterialCardView>
-
-        </androidx.constraintlayout.widget.ConstraintLayout>
 
         <ImageView
             android:id="@+id/iv_quiz_flag"
@@ -103,7 +92,7 @@
             app:layout_constraintTop_toBottomOf="@+id/iv_quiz_flag" />
 
         <TextView
-            android:id="@+id/textView"
+            android:id="@+id/tv_quiz_city"
             android:layout_width="346dp"
             android:layout_height="208dp"
             android:layout_marginStart="32dp"
@@ -120,18 +109,7 @@
             tools:text="Berlin" />
 
         <Button
-            android:id="@+id/btn2"
-            android:layout_width="168dp"
-            android:layout_height="100dp"
-            android:layout_marginTop="65dp"
-            android:layout_marginEnd="28dp"
-            android:backgroundTint="@color/orange"
-            android:text="Land2"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/progressBar" />
-
-        <Button
-            android:id="@+id/btn1"
+            android:id="@+id/btn1_quiz_city"
             android:layout_width="168dp"
             android:layout_height="100dp"
             android:layout_marginStart="32dp"
@@ -142,18 +120,18 @@
             app:layout_constraintTop_toBottomOf="@+id/progressBar" />
 
         <Button
-            android:id="@+id/btn4"
+            android:id="@+id/btn2_quiz_city"
             android:layout_width="168dp"
             android:layout_height="100dp"
-            android:layout_marginTop="28dp"
+            android:layout_marginTop="65dp"
             android:layout_marginEnd="28dp"
             android:backgroundTint="@color/orange"
-            android:text="Land4"
+            android:text="Land2"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/btn2" />
+            app:layout_constraintTop_toBottomOf="@+id/progressBar" />
 
         <Button
-            android:id="@+id/btn3"
+            android:id="@+id/btn3_quiz_city"
             android:layout_width="168dp"
             android:layout_height="100dp"
             android:layout_marginStart="32dp"
@@ -161,7 +139,18 @@
             android:backgroundTint="@color/orange"
             android:text="Land3"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/btn1" />
+            app:layout_constraintTop_toBottomOf="@+id/btn1_quiz_city" />
+
+        <Button
+            android:id="@+id/btn4_quiz_city"
+            android:layout_width="168dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="28dp"
+            android:layout_marginEnd="28dp"
+            android:backgroundTint="@color/orange"
+            android:text="Land4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn2_quiz_city" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
