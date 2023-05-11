@@ -9,6 +9,7 @@ import androidx.databinding.DataBindingUtil
 import androidx.navigation.fragment.findNavController
 import com.example.laenderapp.R
 import com.example.laenderapp.databinding.FragmentQuizBinding
+import kotlin.random.Random
 
 // Für Notizen siehe HomeFragment
 class QuizFragment : Fragment() {
@@ -33,6 +34,15 @@ class QuizFragment : Fragment() {
         }
 
         binding.ivQuizFlag.setImageResource(R.drawable.deutschland)
+
+        var btn = listOf(binding.btn1Quiz, binding.btn2Quiz, binding.btn3Quiz, binding.btn4Quiz)
+
+        var randomBtn = btn.random()
+
+        randomBtn.text = "Deutschland"
+
+        //var flagRandom =
+
     }
 
 }

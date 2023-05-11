@@ -67,7 +67,7 @@
             android:gravity="center"/>
 
         <Button
-            android:id="@+id/btn1_quiz_city"
+            android:id="@+id/btn1_quiz"
             android:layout_width="168dp"
             android:layout_height="100dp"
             android:layout_marginStart="32dp"
@@ -78,7 +78,7 @@
             app:layout_constraintTop_toBottomOf="@+id/tv_quiz_city" />
 
         <Button
-            android:id="@+id/btn2_quiz_city"
+            android:id="@+id/btn2_quiz"
             android:layout_width="168dp"
             android:layout_height="100dp"
             android:layout_marginTop="77dp"
@@ -89,7 +89,7 @@
             app:layout_constraintTop_toBottomOf="@+id/tv_quiz_city" />
 
         <Button
-            android:id="@+id/btn3_quiz_city"
+            android:id="@+id/btn3_quiz"
             android:layout_width="168dp"
             android:layout_height="100dp"
             android:layout_marginStart="32dp"
@@ -100,7 +100,7 @@
             app:layout_constraintStart_toStartOf="parent" />
 
         <Button
-            android:id="@+id/btn4_quiz_city"
+            android:id="@+id/btn4_quiz"
             android:layout_width="168dp"
             android:layout_height="100dp"
             android:layout_marginEnd="32dp"
