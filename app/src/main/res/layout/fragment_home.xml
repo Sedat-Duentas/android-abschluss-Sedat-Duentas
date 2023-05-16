@@ -49,6 +49,7 @@
                 android:id="@+id/iv_home_account_image"
                 android:layout_width="48dp"
                 android:layout_height="49dp"
+                android:padding="5dp"
                 app:srcCompat="@drawable/accountnew"
                 android:background="@color/white"
                 tools:layout_editor_absoluteX="347dp"

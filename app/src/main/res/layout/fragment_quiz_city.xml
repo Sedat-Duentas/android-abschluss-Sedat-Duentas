@@ -44,6 +44,7 @@
                     android:id="@+id/iv_quiz_city_home"
                     android:layout_width="48dp"
                     android:layout_height="49dp"
+                    android:padding="5dp"
                     app:srcCompat="@drawable/home">
                 </ImageView>
 

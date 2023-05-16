@@ -13,8 +13,9 @@ class Repository {
             Continent(R.string.europe, R.drawable.europe),
             Continent(R.string.asia, R.drawable.asia),
             Continent(R.string.africa, R.drawable.africa),
-            Continent(R.string.america, R.drawable.america),
-            Continent(R.string.australia, R.drawable.australia),
+            Continent(R.string.northamerica, R.drawable.nordamerika),
+            Continent(R.string.suedamerica, R.drawable.suedamerika),
+            Continent(R.string.ozeanien, R.drawable.ozeanien),
         )
         return continents
     }

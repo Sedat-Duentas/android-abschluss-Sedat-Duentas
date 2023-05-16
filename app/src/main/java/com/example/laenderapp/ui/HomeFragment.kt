@@ -6,12 +6,15 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
+import androidx.fragment.app.viewModels
 import androidx.navigation.fragment.findNavController
 import com.example.laenderapp.R
 import com.example.laenderapp.databinding.FragmentHomeBinding
 
 class HomeFragment : Fragment() {
     //wir nutzen binding für unser fragment und deklarieren eine leere variable vom Typ FragmentHomeBinding
+    private val viewModel: MainViewModel by viewModels()
+
     private lateinit var binding: FragmentHomeBinding
 
     //in der onCreateView wird das layout grob erstellt, container, größe etc
@@ -28,6 +31,8 @@ class HomeFragment : Fragment() {
     //in der onViewCreated greifen wir auf das layout zu und befüllen es mit den korrekten Daten
     //wir benutzen den navcontroller um unsere navigation aus dem nav_graph durchzuführen
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+
+        viewModel.testdata()
 
         binding.mcHomeAccountImage.setOnClickListener {
             findNavController().navigate(HomeFragmentDirections.actionHomeFragmentToLogFragment())

@@ -5,8 +5,10 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.core.net.toUri
 import androidx.databinding.DataBindingUtil
 import androidx.navigation.fragment.findNavController
+import coil.load
 import com.example.laenderapp.R
 import com.example.laenderapp.databinding.FragmentQuizBinding
 import kotlin.random.Random
@@ -33,13 +35,17 @@ class QuizFragment : Fragment() {
             findNavController().navigate(QuizFragmentDirections.actionQuizFragmentToHomeFragment())
         }
 
-        binding.ivQuizFlag.setImageResource(R.drawable.deutschland)
+        val url = "https://flagcdn.com/256x192/za.png"
+
+        binding.ivQuizFlag.load(url.toUri().buildUpon().scheme("https").build())
 
         var btn = listOf(binding.btn1Quiz, binding.btn2Quiz, binding.btn3Quiz, binding.btn4Quiz)
 
         var randomBtn = btn.random()
 
         randomBtn.text = "Deutschland"
+
+
 
         //var flagRandom =
 

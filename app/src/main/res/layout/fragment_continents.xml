@@ -81,7 +81,7 @@
                 android:layout_width="50dp"
                 android:layout_height="50dp"
                 android:layout_margin="16dp"
-                android:backgroundTint="@color/orange_light"
+                android:backgroundTint="@color/white"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="parent">
 
@@ -89,6 +89,7 @@
                     android:id="@+id/iv_quiz_city_home"
                     android:layout_width="48dp"
                     android:layout_height="49dp"
+                    android:padding="5dp"
                     app:srcCompat="@drawable/home">
                 </ImageView>
 
