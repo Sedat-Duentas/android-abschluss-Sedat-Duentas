@@ -33,7 +33,7 @@ class HomeFragment : Fragment() {
     //wir benutzen den navcontroller um unsere navigation aus dem nav_graph durchzuführen
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
 
-        viewModel.continentsList()
+        //viewModel.continentsList()
 
         binding.mcHomeAccountImage.setOnClickListener {
             findNavController().navigate(HomeFragmentDirections.actionHomeFragmentToLogFragment())

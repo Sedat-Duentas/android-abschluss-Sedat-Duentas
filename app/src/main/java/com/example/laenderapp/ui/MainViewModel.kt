@@ -11,11 +11,11 @@ const val TAG = "MainViewModel"
 
 class MainViewModel(application: Application) : AndroidViewModel(application) {
 
-    private val repository = AppRepository(CountryApi)
+  /*  private val repository = AppRepository(CountryApi)
 
     val continents = repository.continents
 
     fun continentsList() {
         viewModelScope.launch { repository.getContinents() }
-    }
+    }*/
 }
