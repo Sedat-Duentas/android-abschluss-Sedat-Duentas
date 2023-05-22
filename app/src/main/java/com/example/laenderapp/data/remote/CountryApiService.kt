@@ -1,11 +1,9 @@
 package com.example.laenderapp.remotes
 
-import com.example.laenderapp.data.datamodels.AllCountryCodes
 import com.example.laenderapp.data.datamodels.Continents
-import com.example.laenderapp.data.datamodels.CountryCodes
+import com.example.laenderapp.data.datamodels.Country
 import com.squareup.moshi.Moshi
 import com.squareup.moshi.kotlin.reflect.KotlinJsonAdapterFactory
-import retrofit2.Response
 import retrofit2.Retrofit
 import retrofit2.converter.moshi.MoshiConverterFactory
 import retrofit2.http.GET
@@ -23,7 +21,7 @@ private val retrofit = Retrofit.Builder()
 
 interface CountryApiService {
     @GET("data.json")
-    suspend fun loadCountryCodes(): Continents
+    suspend fun loadContinents(): Continents
 }
 
 object CountryApi {

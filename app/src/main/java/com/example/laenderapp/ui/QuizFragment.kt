@@ -7,15 +7,19 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.core.net.toUri
 import androidx.databinding.DataBindingUtil
+import androidx.fragment.app.activityViewModels
 import androidx.navigation.fragment.findNavController
 import coil.load
 import com.example.laenderapp.R
+import com.example.laenderapp.data.datamodels.Continents
 import com.example.laenderapp.databinding.FragmentQuizBinding
 import kotlin.random.Random
 
 // Für Notizen siehe HomeFragment
 class QuizFragment : Fragment() {
     private lateinit var binding: FragmentQuizBinding
+
+    private val viewModel: MainViewModel by activityViewModels()
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -34,6 +38,11 @@ class QuizFragment : Fragment() {
         binding.mcQuizCityHome.setOnClickListener {
             findNavController().navigate(QuizFragmentDirections.actionQuizFragmentToHomeFragment())
         }
+
+        viewModel.continents.observe(viewLifecycleOwner) {
+
+        }
+
 
         val url = "https://flagcdn.com/256x192/za.png"
 

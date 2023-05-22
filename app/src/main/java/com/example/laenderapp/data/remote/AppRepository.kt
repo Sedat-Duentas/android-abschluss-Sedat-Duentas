@@ -1,21 +1,22 @@
 package com.example.laenderapp.data.remote
 
 import android.util.Log
-import androidx.lifecycle.LiveData
-import com.example.laenderapp.data.datamodels.CountryCodes
+import androidx.lifecycle.MutableLiveData
+import com.example.laenderapp.data.datamodels.Continents
+import com.example.laenderapp.data.datamodels.Country
 import com.example.laenderapp.remotes.CountryApi
-import com.example.laenderapp.remotes.CountryApiService
-import kotlinx.coroutines.coroutineScope
-import java.lang.Exception
-import kotlin.math.log
+import kotlin.Exception
 
 const val TAG = "AppRepository"
 class AppRepository(private val api: CountryApi) {
 
-     suspend fun getCountryCodes () {
+    val continents = MutableLiveData<Continents>()
+
+     suspend fun getContinents () {
 
          try {
-             val flags: List<CountryCodes> = api.retrofitService.loadCountryCodes().countryCodesList
+             val result: Continents = api.retrofitService.loadContinents()
+             continents.value = result
 
          } catch (e: Exception) {
              Log.d(TAG, "${e.toString()}")

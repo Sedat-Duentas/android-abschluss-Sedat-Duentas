@@ -13,7 +13,9 @@ class MainViewModel(application: Application) : AndroidViewModel(application) {
 
     private val repository = AppRepository(CountryApi)
 
-    fun testdata() {
-        viewModelScope.launch { repository.getCountryCodes() }
+    val continents = repository.continents
+
+    fun continentsList() {
+        viewModelScope.launch { repository.getContinents() }
     }
 }

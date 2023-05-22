@@ -1,17 +1,16 @@
 package com.example.laenderapp.adapter
 
-import android.content.Context
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.navigation.findNavController
 import androidx.recyclerview.widget.RecyclerView
-import com.example.laenderapp.data.datamodels.Continent
+import com.example.laenderapp.data.datamodels.Adaptermodel
 import com.example.laenderapp.databinding.ItemLayoutBinding
 import com.example.laenderapp.ui.ContinentsFragmentDirections
 
 // Die Liste von Kontinenten wird übergeben und RecyclerView wird vorbereitet
 class ContinetsAdapter (
-    private val dataset: List<Continent>
+    private val dataset: List<Adaptermodel>
 ) : RecyclerView.Adapter<ContinetsAdapter.ItemViewHolder>() {
 
     // Der Viewholder weiß welche Teile des Layouts beim Recycling angepasst werden

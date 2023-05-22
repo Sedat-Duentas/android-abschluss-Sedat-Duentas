@@ -1,0 +1,1372 @@
+{
+  "europe": [
+    {
+      "country": "Albanien",
+      "capital": "Tirana",
+      "language": "Albanisch",
+      "flag": "albanien.png",
+      "currency": "Lek"
+    },
+    {
+      "country": "Andorra",
+      "capital": "Andorra la Vella",
+      "language": "Katalanisch",
+      "flag": "andorra.png",
+      "currency": "Euro"
+    },
+    {
+      "country": "Belgien",
+      "capital": "Brüssel",
+      "language": "Niederländisch, Französisch, Deutsch",
+      "flag": "belgien.png",
+      "currency": "Euro"
+    },
+    {
+      "country": "Bosnien und Herzegowina",
+      "capital": "Sarajevo",
+      "language": "Bosnisch, Kroatisch, Serbisch",
+      "flag": "bosnien.png",
+      "currency": "Konvertible Mark"
+    },
+    {
+      "country": "Bulgarien",
+      "capital": "Sofia",
+      "language": "Bulgarisch",
+      "flag": "bulgarien.png",
+      "currency": "Bulgarischer Lew"
+    },
+    {
+      "country": "Dänemark",
+      "capital": "Kopenhagen",
+      "language": "Dänisch",
+      "flag": "daenemark.png",
+      "currency": "Dänische Krone"
+    },
+    {
+      "country": "Deutschland",
+      "capital": "Berlin",
+      "language": "Deutsch",
+      "flag": "deutschland.png",
+      "currency": "Euro"
+    },
+    {
+      "country": "Estland",
+      "capital": "Tallinn",
+      "language": "Estnisch",
+      "flag": "estland.png",
+      "currency": "Euro"
+    },
+    {
+      "country": "Finnland",
+      "capital": "Helsinki",
+      "language": "Finnisch",
+      "flag": "finnland.png",
+      "currency": "Euro"
+    },
+    {
+      "country": "Frankreich",
+      "capital": "Paris",
+      "language": "Französisch",
+      "flag": "frankreich.png",
+      "currency": "Euro"
+    },
+    {
+      "country": "Griechenland",
+      "capital": "Athen",
+      "language": "Griechisch",
+      "flag": "griechenland.png",
+      "currency": "Euro"
+    },
+    {
+      "country": "Irland",
+      "capital": "Dublin",
+      "language": "Irisch, Englisch",
+      "flag": "irland.png",
+      "currency": "Euro"
+    },
+    {
+      "country": "Island",
+      "capital": "Reykjavík",
+      "language": "Isländisch",
+      "flag": "island.png",
+      "currency": "Isländische Krone"
+    },
+    {
+      "country": "Italien",
+      "capital": "Rom",
+      "language": "Italienisch",
+      "flag": "italien.png",
+      "currency": "Euro"
+    },
+    {
+      "country": "Kroatien",
+      "capital": "Zagreb",
+      "language": "Kroatisch",
+      "flag": "kroatien.png",
+      "currency": "Kroatischer Kuna"
+    },
+    {
+      "country": "Lettland",
+      "capital": "Riga",
+      "language": "Lettisch",
+      "flag": "lettland.png",
+      "currency": "Euro"
+    },
+    {
+      "country": "Liechtenstein",
+      "capital": "Vaduz",
+      "language": "Deutsch",
+      "flag": "liechtenstein.png",
+      "currency": "Schweizer Franken"
+    },
+    {
+      "country": "Litauen",
+      "capital": "Vilnius",
+      "language": "Litauisch",
+      "flag": "litauen.png",
+      "currency": "Euro"
+    },
+    {
+      "country": "Luxemburg",
+      "capital": "Luxemburg",
+      "language": "Luxemburgisch",
+      "flag": "luxemburg.png",
+      "currency": "Euro"
+    },
+    {
+      "country": "Malta",
+      "capital": "Valletta",
+      "language": "Maltesisch, Englisch",
+      "flag": "malta.png",
+      "currency": "Euro"
+    },
+    {
+      "country": "Moldawien",
+      "capital": "Chisinau",
+      "language": "Moldawisch",
+      "flag": "moldawien.png",
+      "currency": "Moldauischer Leu"
+    },
+    {
+      "country": "Monaco",
+      "capital": "Monaco",
+      "language": "Französisch",
+      "flag": "monaco.png",
+      "currency": "Euro"
+    },
+    {
+      "country": "Montenegro",
+      "capital": "Podgorica",
+      "language": "Montenegrinisch",
+      "flag": "montenegro.png",
+      "currency": "Euro"
+    },
+    {
+      "country": "Niederlande",
+      "capital": "Amsterdam",
+      "language": "Niederländisch",
+      "flag": "niederlande.png",
+      "currency": "Euro"
+    },
+    {
+      "country": "Nordmazedonien",
+      "capital": "Skopje",
+      "language": "Mazedonisch",
+      "flag": "nordmazedonien.png",
+      "currency": "Denar"
+    },
+    {
+      "country": "Norwegen",
+      "capital": "Oslo",
+      "language": "Norwegisch",
+      "flag": "norwegen.png",
+      "currency": "Norwegische Krone"
+    },
+    {
+      "country": "Österreich",
+      "capital": "Wien",
+      "language": "Deutsch",
+      "flag": "oesterreich.png",
+      "currency": "Euro"
+    },
+    {
+      "country": "Polen",
+      "capital": "Warschau",
+      "language": "Polnisch",
+      "flag": "polen.png",
+      "currency": "Polnischer Złoty"
+    },
+    {
+      "country": "Portugal",
+      "capital": "Lissabon",
+      "language": "Portugiesisch",
+      "flag": "portugal.png",
+      "currency": "Euro"
+    },
+    {
+      "country": "Rumänien",
+      "capital": "Bukarest",
+      "language": "Rumänisch",
+      "flag": "rumaenien.png",
+      "currency": "Rumänischer Leu"
+    },
+    {
+      "country": "Russland",
+      "capital": "Moskau",
+      "language": "Russisch",
+      "flag": "russland.png",
+      "currency": "Russischer Rubel"
+    },
+    {
+      "country": "San Marino",
+      "capital": "San Marino",
+      "language": "Italienisch",
+      "flag": "sanmarino.png",
+      "currency": "Euro"
+    },
+    {
+      "country": "Schweden",
+      "capital": "Stockholm",
+      "language": "Schwedisch",
+      "flag": "schweden.png",
+      "currency": "Schwedische Krone"
+    },
+    {
+      "country": "Schweiz",
+      "capital": "Bern",
+      "language": "Deutsch, Französisch, Italienisch, Rätoromanisch",
+      "flag": "schweiz.png",
+      "currency": "Schweizer Franken"
+    },
+    {
+      "country": "Serbien",
+      "capital": "Belgrad",
+      "language": "Serbisch",
+      "flag": "serbien.png",
+      "currency": "Serbischer Dinar"
+    },
+    {
+      "country": "Slowakei",
+      "capital": "Bratislava",
+      "language": "Slowakisch",
+      "flag": "slowakei.png",
+      "currency": "Euro"
+    },
+    {
+      "country": "Slowenien",
+      "capital": "Ljubljana",
+      "language": "Slowenisch",
+      "flag": "slowenien.png",
+      "currency": "Euro"
+    },
+    {
+      "country": "Spanien",
+      "capital": "Madrid",
+      "language": "Spanisch",
+      "flag": "spanien.png",
+      "currency": "Euro"
+    },
+    {
+      "country": "Tschechische Republik",
+      "capital": "Prag",
+      "language": "Tschechisch",
+      "flag": "tschechien.png",
+      "currency": "Tschechische Krone"
+    },
+    {
+      "country": "Türkei",
+      "capital": "Ankara",
+      "language": "Türkisch",
+      "flag": "tuerkei.png",
+      "currency": "Türkische Lira"
+    },
+    {
+      "country": "Ukraine",
+      "capital": "Kiew",
+      "language": "Ukrainisch",
+      "flag": "ukraine.png",
+      "currency": "Ukrainische Hrywnja"
+    },
+    {
+      "country": "Ungarn",
+      "capital": "Budapest",
+      "language": "Ungarisch",
+      "flag": "ungarn.png",
+      "currency": "Ungarischer Forint"
+    },
+    {
+      "country": "Vatikanstadt",
+      "capital": "Vatikanstadt",
+      "language": "Italienisch",
+      "flag": "vatikanstadt.png",
+      "currency": "Euro"
+    },
+    {
+      "country": "Vereinigtes Königreich",
+      "capital": "London",
+      "language": "Englisch",
+      "flag": "uk.png",
+      "currency": "Pfund Sterling"
+    },
+    {
+      "country": "Weißrussland",
+      "capital": "Minsk",
+      "language": "Belarussisch, Russisch",
+      "flag": "weissrussland.png",
+      "currency": "Belarussischer Rubel"
+    },
+    {
+      "country": "Zypern",
+      "capital": "Nikosia",
+      "language": "Griechisch, Türkisch",
+      "flag": "zypern.png",
+      "currency": "Euro"
+    }
+  ],
+  "asia": [
+    {
+      "country": "Afghanistan",
+      "capital": "Kabul",
+      "language": "Paschtunisch, Dari",
+      "flag": "afghanistan.png",
+      "currency": "Afghanischer Afghani"
+    },
+    {
+      "country": "Armenien",
+      "capital": "Jerewan",
+      "language": "Armenisch",
+      "flag": "armenien.png",
+      "currency": "Armenischer Dram"
+    },
+    {
+      "country": "Aserbaidschan",
+      "capital": "Baku",
+      "language": "Aserbaidschanisch",
+      "flag": "azerbaidschan.png",
+      "currency": "Aserbaidschan-Manat"
+    },
+    {
+      "country": "Bahrain",
+      "capital": "Manama",
+      "language": "Arabisch",
+      "flag": "bahrain.png",
+      "currency": "Bahrain-Dinar"
+    },
+    {
+      "country": "Bangladesch",
+      "capital": "Dhaka",
+      "language": "Bengalisch",
+      "flag": "bangladesch.png",
+      "currency": "Bangladesch-Taka"
+    },
+    {
+      "country": "Bhutan",
+      "capital": "Thimphu",
+      "language": "Dzongkha",
+      "flag": "bhutan.png",
+      "currency": "Bhutan-Ngultrum"
+    },
+    {
+      "country": "Brunei",
+      "capital": "Bandar Seri Begawan",
+      "language": "Malaiisch",
+      "flag": "brunei.png",
+      "currency": "Brunei-Dollar"
+    },
+    {
+      "country": "China",
+      "capital": "Peking",
+      "language": "Chinesisch",
+      "flag": "china.png",
+      "currency": "Renminbi Yuan"
+    },
+    {
+      "country": "Georgien",
+      "capital": "Tiflis",
+      "language": "Georgisch",
+      "flag": "georgien.png",
+      "currency": "Georgischer Lari"
+    },
+    {
+      "country": "Indien",
+      "capital": "Neu-Delhi",
+      "language": "Hindi, Englisch",
+      "flag": "indien.png",
+      "currency": "Indische Rupie"
+    },
+    {
+      "country": "Indonesien",
+      "capital": "Jakarta",
+      "language": "Indonesisch",
+      "flag": "indonesien.png",
+      "currency": "Indonesische Rupiah"
+    },
+    {
+      "country": "Irak",
+      "capital": "Bagdad",
+      "language": "Arabisch, Kurdisch",
+      "flag": "irak.png",
+      "currency": "Irakischer Dinar"
+    },
+    {
+      "country": "Iran",
+      "capital": "Teheran",
+      "language": "Persisch",
+      "flag": "iran.png",
+      "currency": "Iranischer Rial"
+    },
+    {
+      "country": "Israel",
+      "capital": "Jerusalem",
+      "language": "Hebräisch, Arabisch",
+      "flag": "israel.png",
+      "currency": "Israelischer Schekel"
+    },
+    {
+      "country": "Japan",
+      "capital": "Tokio",
+      "language": "Japanisch",
+      "flag": "japan.png",
+      "currency": "Japanischer Yen"
+    },
+    {
+      "country": "Jemen",
+      "capital": "Sanaa",
+      "language": "Arabisch",
+      "flag": "jemen.png",
+      "currency": "Jemenitischer Rial"
+    },
+    {
+      "country": "Jordanien",
+      "capital": "Amman",
+      "language": "Arabisch",
+      "flag": "jordanien.png",
+      "currency": "Jordanischer Dinar"
+    },
+    {
+      "country": "Kambodscha",
+      "capital": "Phnom Penh",
+      "language": "Khmer",
+      "flag": "kambodscha.png",
+      "currency": "Kambodschanischer Riel"
+    },
+    {
+      "country": "Kasachstan",
+      "capital": "Nursultan",
+      "language": "Kasachisch",
+      "flag": "kasachstan.png",
+      "currency": "Kasachischer Tenge"
+    },
+    {
+      "country": "Katar",
+      "capital": "Doha",
+      "language": "Arabisch",
+      "flag": "katar.png",
+      "currency": "Katar-Riyal"
+    },
+    {
+      "country": "Kirgisistan",
+      "capital": "Bischkek",
+      "language": "Kirgisisch",
+      "flag": "kirgisistan.png",
+      "currency": "Kirgisischer Som"
+    },
+    {
+      "country": "Kuwait",
+      "capital": "Kuwait-Stadt",
+      "language": "Arabisch",
+      "flag": "kuwait.png",
+      "currency": "Kuwait-Dinar"
+    },
+    {
+      "country": "Laos",
+      "capital": "Vientiane",
+      "language": "Laotisch",
+      "flag": "laos.png",
+      "currency": "Laotischer Kip"
+    },
+    {
+      "country": "Libanon",
+      "capital": "Beirut",
+      "language": "Arabisch",
+      "flag": "libanon.png",
+      "currency": "Libanesisches Pfund"
+    },
+    {
+      "country": "Malaysia",
+      "capital": "Kuala Lumpur",
+      "language": "Malaiisch",
+      "flag": "malaysia.png",
+      "currency": "Malaysischer Ringgit"
+    },
+    {
+      "country": "Malediven",
+      "capital": "Malé",
+      "language": "Dhivehi",
+      "flag": "malediven.png",
+      "currency": "Malediven-Rufiyaa"
+    },
+    {
+      "country": "Mongolei",
+      "capital": "Ulan-Bator",
+      "language": "Mongolisch",
+      "flag": "mongolei.png",
+      "currency": "Mongolischer Tögrög"
+    },
+    {
+      "country": "Myanmar",
+      "capital": "Naypyidaw",
+      "language": "Birmanisch",
+      "flag": "myanmar.png",
+      "currency": "Myanmarischer Kyat"
+    },
+    {
+      "country": "Nepal",
+      "capital": "Kathmandu",
+      "language": "Nepali",
+      "flag": "nepal.png",
+      "currency": "Nepalesische Rupie"
+    },
+    {
+      "country": "Nordkorea",
+      "capital": "Pjöngjang",
+      "language": "Koreanisch",
+      "flag": "nordkorea.png",
+      "currency": "Nordkoreanischer Won"
+    },
+    {
+      "country": "Oman",
+      "capital": "Maskat",
+      "language": "Arabisch",
+      "flag": "oman.png",
+      "currency": "Omanischer Rial"
+    },
+    {
+      "country": "Osttimor",
+      "capital": "Dili",
+      "language": "Portugiesisch, Tetum",
+      "flag": "timorleste.png",
+      "currency": "US-Dollar, Osttimoresischer Centavo"
+    },
+    {
+      "country": "Pakistan",
+      "capital": "Islamabad",
+      "language": "Urdu",
+      "flag": "pakistan.png",
+      "currency": "Pakistanische Rupie"
+    },
+    {
+      "country": "Philippinen",
+      "capital": "Manila",
+      "language": "Filipino, Englisch",
+      "flag": "philippinen.png",
+      "currency": "Philippinischer Peso"
+    },
+    {
+      "country": "Saudi-Arabien",
+      "capital": "Riad",
+      "language": "Arabisch",
+      "flag": "saudiarabien.png",
+      "currency": "Saudi-Riyal"
+    },
+    {
+      "country": "Singapur",
+      "capital": "Singapur",
+      "language": "Englisch, Malaiisch, Tamil, Chinesisch",
+      "flag": "singapur.png",
+      "currency": "Singapur-Dollar"
+    },
+    {
+      "country": "Sri Lanka",
+      "capital": "Colombo",
+      "language": "Singhalesisch, Tamil",
+      "flag": "srilanka.png",
+      "currency": "Sri-Lanka-Rupie"
+    },
+    {
+      "country": "Südkorea",
+      "capital": "Seoul",
+      "language": "Koreanisch",
+      "flag": "suedkorea.png",
+      "currency": "Südkoreanischer Won"
+    },
+    {
+      "country": "Syrien",
+      "capital": "Damaskus",
+      "language": "Arabisch",
+      "flag": "syrien.png",
+      "currency": "Syrisches Pfund"
+    },
+    {
+      "country": "Tadschikistan",
+      "capital": "Duschanbe",
+      "language": "Tadschikisch",
+      "flag": "tadschikistan.png",
+      "currency": "Tadschikistan-Somoni"
+    },
+    {
+      "country": "Taiwan",
+      "capital": "Taipeh",
+      "language": "Mandarin",
+      "flag": "taiwan.png",
+      "currency": "Neuer Taiwan-Dollar"
+    },
+    {
+      "country": "Thailand",
+      "capital": "Bangkok",
+      "language": "Thai",
+      "flag": "thailand.png",
+      "currency": "Thailändischer Baht"
+    },
+    {
+      "country": "Turkmenistan",
+      "capital": "Aschgabat",
+      "language": "Turkmenisch",
+      "flag": "turkmenistan.png",
+      "currency": "Turkmenistan-Manat"
+    },
+    {
+      "country": "Usbekistan",
+      "capital": "Taschkent",
+      "language": "Usbekisch",
+      "flag": "usbekistan.png",
+      "currency": "Usbekischer Som"
+    },
+    {
+      "country": "Vereinigte Arabische Emirate",
+      "capital": "Abu Dhabi",
+      "language": "Arabisch",
+      "flag": "vae.png",
+      "currency": "Vereinigte Arabische Emirate-Dirham"
+    },
+    {
+      "country": "Vietnam",
+      "capital": "Hanoi",
+      "language": "Vietnamesisch",
+      "flag": "vietnam.png",
+      "currency": "Vietnamesischer Đồng"
+    }
+  ],
+  "afrika": [
+    {
+          "country": "Ägypten",
+          "capital": "Kairo",
+          "language": "Arabisch",
+          "flag": "eg.png",
+          "currency": "Ägyptisches Pfund"
+        },
+        {
+          "country": "Äthiopien",
+          "capital": "Addis Abeba",
+          "language": "Amharisch",
+          "flag": "aethiopien.png",
+          "currency": "Äthiopischer Birr"
+        },
+        {
+          "country": "Algerien",
+          "capital": "Algier",
+          "language": "Arabisch",
+          "flag": "algerien.png",
+          "currency": "Algerischer Dinar"
+        },
+        {
+          "country": "Angola",
+          "capital": "Luanda",
+          "language": "Portugiesisch",
+          "flag": "angola.png",
+          "currency": "Angolanischer Kwanza"
+        },
+        {
+          "country": "Benin",
+          "capital": "Porto-Novo",
+          "language": "Französisch",
+          "flag": "benin.png",
+          "currency": "Westafrikanischer CFA-Franc"
+        },
+        {
+          "country": "Botswana",
+          "capital": "Gaborone",
+          "language": "Englisch, Setswana",
+          "flag": "botswana.png",
+          "currency": "Pula"
+        },
+        {
+          "country": "Burkina Faso",
+          "capital": "Ouagadougou",
+          "language": "Französisch",
+          "flag": "burkinafaso.png",
+          "currency": "Westafrikanischer CFA-Franc"
+        },
+        {
+          "country": "Burundi",
+          "capital": "Bujumbura",
+          "language": "Kirundi, Französisch",
+          "flag": "burundi.png",
+          "currency": "Burundi-Franc"
+        },
+        {
+          "country": "Dschibuti",
+          "capital": "Dschibuti",
+          "language": "Arabisch, Französisch",
+          "flag": "dschibuti.png",
+          "currency": "Dschibuti-Franc"
+        },
+        {
+          "country": "Elfenbeinküste",
+          "capital": "Yamoussoukro",
+          "language": "Französisch",
+          "flag": "elfenbeinkueste.png",
+          "currency": "Westafrikanischer CFA-Franc"
+        },
+        {
+          "country": "Eritrea",
+          "capital": "Asmara",
+          "language": "Arabisch, Tigrinya, Englisch",
+          "flag": "eritrea.png",
+          "currency": "Nakfa"
+        },
+        {
+          "country": "Gabun",
+          "capital": "Libreville",
+          "language": "Französisch",
+          "flag": "gabun.png",
+          "currency": "Zentralafrikanischer CFA-Franc"
+        },
+        {
+          "country": "Gambia",
+          "capital": "Banjul",
+          "language": "Englisch",
+          "flag": "gambia.png",
+          "currency": "Dalasi"
+        },
+        {
+          "country": "Ghana",
+          "capital": "Accra",
+          "language": "Englisch",
+          "flag": "ghana.png",
+          "currency": "Ghanaischer Cedi"
+        },
+        {
+          "country": "Guinea",
+          "capital": "Conakry",
+          "language": "Französisch",
+          "flag": "guinea.png",
+          "currency": "Guineischer Franc"
+        },
+        {
+          "country": "Guinea-Bissau",
+          "capital": "Bissau",
+          "language": "Portugiesisch",
+          "flag": "guineabissau.png",
+          "currency": "CFA-Franc Bissau"
+        },
+        {
+          "country": "Kamerun",
+          "capital": "Yaoundé",
+          "language": "Englisch, Französisch",
+          "flag": "kamerun.png",
+          "currency": "Zentralafrikanischer CFA-Franc"
+        },
+        {
+          "country": "Kap Verde",
+          "capital": "Praia",
+          "language": "Portugiesisch",
+          "flag": "kap-verde.png",
+          "currency": "Kap-Verde-Escudo"
+        },
+        {
+          "country": "Kenia",
+          "capital": "Nairobi",
+          "language": "Swahili, Englisch",
+          "flag": "kenia.png",
+          "currency": "Kenia-Schilling"
+        },
+        {
+          "country": "Komoren",
+          "capital": "Moroni",
+          "language": "Komorisch, Arabisch, Französisch",
+          "flag": "komoren.png",
+          "currency": "Komoren-Franc"
+        },
+        {
+          "country": "Kongo, Demokratische Republik",
+          "capital": "Kinshasa",
+          "language": "Französisch",
+          "flag": "kongodemokratisch.png",
+          "currency": "Kongolesischer Franc"
+        },
+        {
+          "country": "Kongo, Republik",
+          "capital": "Brazzaville",
+          "language": "Französisch",
+          "flag": "kongo.png",
+          "currency": "Kongolesischer Franc"
+        },
+        {
+          "country": "Lesotho",
+          "capital": "Maseru",
+          "language": "Sesotho, Englisch",
+          "flag": "lesotho.png",
+          "currency": "Loti, Südafrikanischer Rand"
+        },
+        {
+          "country": "Liberia",
+          "capital": "Monrovia",
+          "language": "Englisch",
+          "flag": "liberia.png",
+          "currency": "Liberianischer Dollar"
+        },
+        {
+          "country": "Libyen",
+          "capital": "Tripolis",
+          "language": "Arabisch",
+          "flag": "libyen.png",
+          "currency": "Libyscher Dinar"
+        },
+        {
+          "country": "Madagaskar",
+          "capital": "Antananarivo",
+          "language": "Malagasy, Französisch",
+          "flag": "madagaskar.png",
+          "currency": "Madagaskar-Ariary"
+        },
+        {
+          "country": "Malawi",
+          "capital": "Lilongwe",
+          "language": "Englisch, Chichewa",
+          "flag": "malawi.png",
+          "currency": "Malawischer Kwacha"
+        },
+        {
+          "country": "Mali",
+          "capital": "Bamako",
+          "language": "Französisch",
+          "flag": "mali.png",
+          "currency": "Westafrikanischer CFA-Franc"
+        },
+        {
+          "country": "Marokko",
+          "capital": "Rabat",
+          "language": "Arabisch, Berberisch",
+          "flag": "marokko.png",
+          "currency": "Marokkanischer Dirham"
+        },
+        {
+          "country": "Mauretanien",
+          "capital": "Nouakchott",
+          "language": "Arabisch",
+          "flag": "mauretanien.png",
+          "currency": "Mauretanischer Ouguiya"
+        },
+        {
+          "country": "Mauritius",
+          "capital": "Port Louis",
+          "language": "Englisch, Französisch",
+          "flag": "mauritius.png",
+          "currency": "Mauritius-Rupie"
+        },
+        {
+          "country": "Mosambik",
+          "capital": "Maputo",
+          "language": "Portugiesisch",
+          "flag": "mosambik.png",
+          "currency": "Mosambikanischer Metical"
+        },
+        {
+          "country": "Namibia",
+          "capital": "Windhoek",
+          "language": "Englisch, Afrikaans, Deutsch",
+          "flag": "namibia.png",
+          "currency": "Namibischer Dollar"
+        },
+        {
+          "country": "Niger",
+          "capital": "Niamey",
+          "language": "Französisch",
+          "flag": "niger.png",
+          "currency": "CFA-Franc BCEAO"
+        },
+        {
+          "country": "Nigeria",
+          "capital": "Abuja",
+          "language": "Englisch",
+          "flag": "nigeria.png",
+          "currency": "Nigerianischer Naira"
+        },
+        {
+          "country": "Ruanda",
+          "capital": "Kigali",
+          "language": "Kinyarwanda, Englisch, Französisch",
+          "flag": "ruanda.png",
+          "currency": "Ruanda-Franc"
+        },
+        {
+          "country": "Sambia",
+          "capital": "Lusaka",
+          "language": "Englisch",
+          "flag": "sambia.png",
+          "currency": "Sambischer Kwacha"
+        },
+        {
+          "country": "São Tomé und Príncipe",
+          "capital": "São Tomé",
+          "language": "Portugiesisch",
+          "flag": "saotomeundprincipe.png",
+          "currency": "Dobra"
+        },
+        {
+          "country": "Senegal",
+          "capital": "Dakar",
+          "language": "Französisch",
+          "flag": "senegal.png",
+          "currency": "Westafrikanischer CFA-Franc"
+        },
+        {
+          "country": "Seychellen",
+          "capital": "Victoria",
+          "language": "Englisch, Französisch, Seychellen-Kreol",
+          "flag": "seychellen.png",
+          "currency": "Seychellen-Rupie"
+        },
+        {
+          "country": "Sierra Leone",
+          "capital": "Freetown",
+          "language": "Englisch",
+          "flag": "sierraleone.png",
+          "currency": "Sierra-leonischer Leone"
+        },
+        {
+          "country": "Simbabwe",
+          "capital": "Harare",
+          "language": "Englisch, Shona, Ndebele",
+          "flag": "simbabwe.png",
+          "currency": "Simbabwischer Dollar"
+        },
+        {
+          "country": "Somalia",
+          "capital": "Mogadischu",
+          "language": "Somali, Arabisch",
+          "flag": "somalia.png",
+          "currency": "Somalia-Schilling"
+        },
+        {
+          "country": "Südafrika",
+          "capital": "Pretoria (administrative), Kapstadt (legislative), Bloemfontein (judicial)",
+          "language": "Afrikaans, Englisch, Zulu, Xhosa, Swasi, Nordsotho, Südsotho, Tsonga, Tswana, Venda",
+          "flag": "suedafrika.png",
+          "currency": "Südafrikanischer Rand"
+        },
+        {
+          "country": "Südsudan",
+          "capital": "Juba",
+          "language": "Englisch",
+          "flag": "suedsudan.png",
+          "currency": "Südsudanesisches Pfund"
+        },
+    {
+      "country": "Sudan",
+      "capital": "Khartum",
+      "language": "Arabisch, Englisch",
+      "flag": "sudan.png",
+      "currency": "Sudanesisches Pfund"
+    },
+    {
+      "country": "Swasiland",
+      "capital": "Mbabane",
+      "language": "Swasi, Englisch",
+      "flag": "swasiland.png",
+      "currency": "Lilangeni"
+    },
+        {
+          "country": "Tansania",
+          "capital": "Dodoma",
+          "language": "Swahili, Englisch",
+          "flag": "tansania.png",
+          "currency": "Tansanischer Schilling"
+        },
+        {
+          "country": "Togo",
+          "capital": "Lomé",
+          "language": "Französisch",
+          "flag": "togo.png",
+          "currency": "Westafrikanischer CFA-Franc"
+        },
+        {
+          "country": "Tschad",
+          "capital": "N'Djamena",
+          "language": "Arabisch, Französisch",
+          "flag": "tschad.png",
+          "currency": "Zentralafrikanischer CFA-Franc"
+        },
+        {
+          "country": "Tunesien",
+          "capital": "Tunis",
+          "language": "Arabisch",
+          "flag": "tunesien.png",
+          "currency": "Tunesischer Dinar"
+        },
+        {
+          "country": "Uganda",
+          "capital": "Kampala",
+          "language": "Englisch, Swahili",
+          "flag": "uganda.png",
+          "currency": "Uganda-Schilling"
+        },
+        {
+          "country": "Zentralafrikanische Republik",
+          "capital": "Bangui",
+          "language": "Französisch, Sango",
+          "flag": "zentralafrika.png",
+          "currency": "Zentralafrikanischer CFA-Franc"
+        }
+      ],
+  "nordamerika": [
+    {
+      "country": "Antigua und Barbuda",
+      "capital": "St. John's",
+      "language": "Englisch",
+      "flag": "antiguaundberbuda.png",
+      "currency": "Ostkaribischer Dollar"
+    },
+    {
+      "country": "Bahamas",
+      "capital": "Nassau",
+      "language": "Englisch",
+      "flag": "bahamas.png",
+      "currency": "Bahama-Dollar"
+    },
+    {
+      "country": "Barbados",
+      "capital": "Bridgetown",
+      "language": "Englisch",
+      "flag": "barbados.png",
+      "currency": "Barbados-Dollar"
+    },
+    {
+      "country": "Belize",
+      "capital": "Belmopan",
+      "language": "Englisch",
+      "flag": "belize.png",
+      "currency": "Belizischer Dollar"
+    },
+    {
+      "country": "Costa Rica",
+      "capital": "San José",
+      "language": "Spanisch",
+      "flag": "costarica.png",
+      "currency": "Costa-Rica-Colón"
+    },
+    {
+      "country": "Dominica",
+      "capital": "Roseau",
+      "language": "Englisch",
+      "flag": "dominica.png",
+      "currency": "Ostkaribischer Dollar"
+    },
+    {
+      "country": "Dominikanische Republik",
+      "capital": "Santo Domingo",
+      "language": "Spanisch",
+      "flag": "dominikanischerepublik.png",
+      "currency": "Dominikanischer Peso"
+    },
+    {
+      "country": "El Salvador",
+      "capital": "San Salvador",
+      "language": "Spanisch",
+      "flag": "elsalvador.png",
+      "currency": "US-Dollar"
+    },
+    {
+      "country": "Grenada",
+      "capital": "St. George's",
+      "language": "Englisch",
+      "flag": "grenada.png",
+      "currency": "Ostkaribischer Dollar"
+    },
+    {
+      "country": "Guatemala",
+      "capital": "Guatemala-Stadt",
+      "language": "Spanisch",
+      "flag": "guatemala.png",
+      "currency": "Quetzal"
+    },
+    {
+      "country": "Haiti",
+      "capital": "Port-au-Prince",
+      "language": "Haitianisch, Französisch",
+      "flag": "haiti.png",
+      "currency": "Gourde"
+    },
+    {
+      "country": "Honduras",
+      "capital": "Tegucigalpa",
+      "language": "Spanisch",
+      "flag": "honduras.png",
+      "currency": "Lempira"
+    },
+    {
+      "country": "Jamaika",
+      "capital": "Kingston",
+      "language": "Englisch",
+      "flag": "jamaika.png",
+      "currency": "Jamaika-Dollar"
+    },
+    {
+      "country": "Kanada",
+      "capital": "Ottawa",
+      "language": "Englisch, Französisch",
+      "flag": "kanada.png",
+      "currency": "Kanadischer Dollar"
+    },
+    {
+      "country": "Kuba",
+      "capital": "Havanna",
+      "language": "Spanisch",
+      "flag": "kuba.png",
+      "currency": "Kubanischer Peso"
+    },
+    {
+      "country": "Mexiko",
+      "capital": "Mexiko-Stadt",
+      "language": "Spanisch",
+      "flag": "mexiko.png",
+      "currency": "Mexikanischer Peso"
+    },
+    {
+      "country": "Nicaragua",
+      "capital": "Managua",
+      "language": "Spanisch",
+      "flag": "nicaragua.png",
+      "currency": "Córdoba Oro"
+    },
+    {
+      "country": "Panama",
+      "capital": "Panama-Stadt",
+      "language": "Spanisch",
+      "flag": "panama.png",
+      "currency": "Balboa, US-Dollar"
+    },
+    {
+      "country": "St. Kitts und Nevis",
+      "capital": "Basseterre",
+      "language": "Englisch",
+      "flag": "stkittsundnevis.png",
+      "currency": "Ostkaribischer Dollar"
+    },
+    {
+      "country": "St. Lucia",
+      "capital": "Castries",
+      "language": "Englisch",
+      "flag": "stlucia.png",
+      "currency": "Ostkaribischer Dollar"
+    },
+    {
+      "country": "St. Vincent und die Grenadinen",
+      "capital": "Kingstown",
+      "language": "Englisch",
+      "flag": "stvincentunddiegrenadien.png",
+      "currency": "Ostkaribischer Dollar"
+    },
+    {
+      "country": "Trinidad und Tobago",
+      "capital": "Port of Spain",
+      "language": "Englisch",
+      "flag": "trinidadundtobago.png",
+      "currency": "Trinidad und Tobago-Dollar"
+    },
+    {
+      "country": "USA",
+      "capital": "Washington, D.C.",
+      "language": "Englisch",
+      "flag": "usa.png",
+      "currency": "US-Dollar"
+    }
+  ],
+  "suedamerika": [
+    {
+      "country": "Argentinien",
+      "capital": "Buenos Aires",
+      "language": "Spanisch",
+      "flag": "argentinien.png",
+      "currency": "Argentinischer Peso"
+    },
+    {
+      "country": "Bolivien",
+      "capital": "Sucre (legislative), La Paz (administrative)",
+      "language": "Spanisch, Aymara, Quechua",
+      "flag": "bolivien.png",
+      "currency": "Boliviano"
+    },
+    {
+      "country": "Brasilien",
+      "capital": "Brasília",
+      "language": "Portugiesisch",
+      "flag": "brasilien.png",
+      "currency": "Real"
+    },
+    {
+      "country": "Chile",
+      "capital": "Santiago de Chile",
+      "language": "Spanisch",
+      "flag": "chile.png",
+      "currency": "Chilenischer Peso"
+    },
+    {
+      "country": "Ecuador",
+      "capital": "Quito",
+      "language": "Spanisch",
+      "flag": "ecuador.png",
+      "currency": "US-Dollar"
+    },
+    {
+      "country": "Guyana",
+      "capital": "Georgetown",
+      "language": "Englisch",
+      "flag": "guyana.png",
+      "currency": "Guyana-Dollar"
+    },
+    {
+      "country": "Kolumbien",
+      "capital": "Bogotá",
+      "language": "Spanisch",
+      "flag": "kolumbien.png",
+      "currency": "Kolumbianischer Peso"
+    },
+    {
+      "country": "Paraguay",
+      "capital": "Asunción",
+      "language": "Spanisch, Guaraní",
+      "flag": "paraguay.png",
+      "currency": "Guaraní"
+    },
+    {
+      "country": "Peru",
+      "capital": "Lima",
+      "language": "Spanisch",
+      "flag": "peru.png",
+      "currency": "Peruanischer Sol"
+    },
+    {
+      "country": "Suriname",
+      "capital": "Paramaribo",
+      "language": "Niederländisch",
+      "flag": "suriname.png",
+      "currency": "Suriname-Dollar"
+    },
+    {
+      "country": "Uruguay",
+      "capital": "Montevideo",
+      "language": "Spanisch",
+      "flag": "uruguay.png",
+      "currency": "Uruguayischer Peso"
+    },
+    {
+      "country": "Venezuela",
+      "capital": "Caracas",
+      "language": "Spanisch",
+      "flag": "venezuela.png",
+      "currency": "Bolívar Soberano"
+    }
+  ],
+  "ozeanien": [
+    {
+      "country": "Australien",
+      "capital": "Canberra",
+      "language": "Englisch",
+      "flag": "australien.png",
+      "currency": "Australischer Dollar"
+    },
+    {
+      "country": "Fidschi",
+      "capital": "Suva",
+      "language": "Englisch, Fidschianisch",
+      "flag": "fidschi.png",
+      "currency": "Fidschi-Dollar"
+    },
+    {
+      "country": "Kiribati",
+      "capital": "South Tarawa",
+      "language": "Englisch, Gilbertesisch",
+      "flag": "kiribati.png",
+      "currency": "Australischer Dollar"
+    },
+    {
+      "country": "Marshallinseln",
+      "capital": "Majuro",
+      "language": "Marshallese, Englisch",
+      "flag": "marshallinseln.png",
+      "currency": "US-Dollar"
+    },
+    {
+      "country": "Mikronesien",
+      "capital": "Palikir",
+      "language": "Englisch",
+      "flag": "mikronesien.png",
+      "currency": "US-Dollar"
+    },
+    {
+      "country": "Nauru",
+      "capital": "Yaren",
+      "language": "Nauruisch, Englisch",
+      "flag": "nauru.png",
+      "currency": "Australischer Dollar"
+    },
+    {
+      "country": "Neuseeland",
+      "capital": "Wellington",
+      "language": "Englisch, Māori",
+      "flag": "neuseeland.png",
+      "currency": "Neuseeland-Dollar"
+    },
+    {
+      "country": "Palau",
+      "capital": "Ngerulmud",
+      "language": "Englisch, Palauisch",
+      "flag": "palau.png",
+      "currency": "US-Dollar"
+    },
+    {
+      "country": "Papua-Neuguinea",
+      "capital": "Port Moresby",
+      "language": "Englisch, Tok Pisin, Hiri Motu",
+      "flag": "papuaneuguinea.png",
+      "currency": "Kina"
+    },
+    {
+      "country": "Salomonen",
+      "capital": "Honiara",
+      "language": "Englisch",
+      "flag": "salomonen.png",
+      "currency": "Salomonen-Dollar"
+    },
+    {
+      "country": "Samoa",
+      "capital": "Apia",
+      "language": "Samoanisch, Englisch",
+      "flag": "samoa.png",
+      "currency": "Samoanischer Tala"
+    },
+    {
+      "country": "Tonga",
+      "capital": "Nuku'alofa",
+      "language": "Tongaisch, Englisch",
+      "flag": "tonga.png",
+      "currency": "Tongaischer Pa'anga"
+    },
+    {
+      "country": "Tuvalu",
+      "capital": "Funafuti",
+      "language": "Englisch, Tuvaluisch",
+      "flag": "tuvalu.png",
+      "currency": "Australischer Dollar"
+    },
+    {
+      "country": "Vanuatu",
+      "capital": "Port Vila",
+      "language": "Bislama, Englisch, Französisch",
+      "flag": "vanuatu.png",
+      "currency": "Vatu"
+    }
+  ]
+}
