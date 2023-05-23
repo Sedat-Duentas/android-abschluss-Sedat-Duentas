@@ -39,9 +39,9 @@ class QuizFragment : Fragment() {
             findNavController().navigate(QuizFragmentDirections.actionQuizFragmentToHomeFragment())
         }
 
-        /*viewModel.continents.observe(viewLifecycleOwner) {
+        viewModel.continents.observe(viewLifecycleOwner) {
 
-        }*/
+        }
 
 
         val url = "https://flagcdn.com/256x192/za.png"
