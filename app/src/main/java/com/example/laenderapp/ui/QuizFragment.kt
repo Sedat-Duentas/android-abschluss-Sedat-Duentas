@@ -43,7 +43,6 @@ class QuizFragment : Fragment() {
 
         }
 
-
         val url = "https://flagcdn.com/256x192/za.png"
 
         binding.ivQuizFlag.load(url.toUri().buildUpon().scheme("https").build())

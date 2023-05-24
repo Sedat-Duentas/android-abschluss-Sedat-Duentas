@@ -37,21 +37,9 @@ class AppRepository(private val api: CountryApi, private val database: Continent
                 database.continentsDatabaseDao.insertCountries(result.europe.map { it.copy(continent = "europe") })
                 database.continentsDatabaseDao.insertCountries(result.asia.map { it.copy(continent = "asia") })
                 database.continentsDatabaseDao.insertCountries(result.africa.map { it.copy(continent = "africa") })
-                database.continentsDatabaseDao.insertCountries(result.northAmerica.map {
-                    it.copy(
-                        continent = "northAmerica"
-                    )
-                })
-                database.continentsDatabaseDao.insertCountries(result.southAmerica.map {
-                    it.copy(
-                        continent = "southAmerica"
-                    )
-                })
-                database.continentsDatabaseDao.insertCountries(result.oceania.map {
-                    it.copy(
-                        continent = "oceania"
-                    )
-                })
+                database.continentsDatabaseDao.insertCountries(result.northAmerica.map { it.copy(continent = "northAmerica") })
+                database.continentsDatabaseDao.insertCountries(result.southAmerica.map { it.copy(continent = "southAmerica") })
+                database.continentsDatabaseDao.insertCountries(result.oceania.map { it.copy(continent = "oceania") })
 
             } catch (e: Exception) {
                 Log.d(TAG, "${e.toString()}")
