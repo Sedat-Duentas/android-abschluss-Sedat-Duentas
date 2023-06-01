@@ -7,6 +7,7 @@ import androidx.room.OnConflictStrategy
 import androidx.room.Query
 import com.example.laenderapp.data.datamodels.Country
 import com.example.laenderapp.data.datamodels.CountryEurope
+import com.example.laenderapp.data.datamodels.QuizResult
 
 @Dao
 interface ContinentsDatabaseDao {
@@ -14,10 +15,16 @@ interface ContinentsDatabaseDao {
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     suspend fun insertCountries(continents: List<Country>)
 
-    @Query("SELECT * from Country")
-    fun getAllCountries() : LiveData<List<Country>>
+    @Insert (onConflict = OnConflictStrategy.REPLACE)
+    suspend fun insertQuizResult(quizResult: QuizResult)
+
+    /*@Query("SELECT * from Country")
+    fun getAllCountries() : LiveData<List<Country>>*/
 
     @Query("SELECT * from Country WHERE continent = :continent")
     fun getAllCountriesByContinent(continent: String): LiveData<List<Country>>
+
+    @Query("DELETE from Country")
+    fun deleteCountries()
 
 }

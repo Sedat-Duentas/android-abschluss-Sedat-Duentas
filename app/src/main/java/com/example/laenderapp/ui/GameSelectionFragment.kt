@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
+import androidx.fragment.app.activityViewModels
 import androidx.navigation.fragment.findNavController
 import com.example.laenderapp.R
 import com.example.laenderapp.databinding.FragmentGameSelectionBinding
@@ -14,6 +15,8 @@ import com.example.laenderapp.databinding.FragmentGameSelectionBinding
 class GameSelectionFragment : Fragment() {
 
     private lateinit var binding: FragmentGameSelectionBinding
+
+    private val viewModel: MainViewModel by activityViewModels()
 
     override fun onCreateView(
         inflater: LayoutInflater,

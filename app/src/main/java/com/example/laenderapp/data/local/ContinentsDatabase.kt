@@ -11,9 +11,10 @@ import com.example.laenderapp.data.datamodels.CountryEurope
 import com.example.laenderapp.data.datamodels.CountrynorthAmerica
 import com.example.laenderapp.data.datamodels.Countryoceania
 import com.example.laenderapp.data.datamodels.CountrysouthAmerica
+import com.example.laenderapp.data.datamodels.QuizResult
 
 @Database(entities = [
-    Country::class], version = 1)
+    Country::class, QuizResult::class], version = 1)
 abstract class ContinentsDatabase : RoomDatabase() {
 
     abstract val continentsDatabaseDao: ContinentsDatabaseDao
