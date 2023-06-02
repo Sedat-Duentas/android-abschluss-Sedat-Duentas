@@ -7,6 +7,7 @@ import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.viewModelScope
 import com.example.laenderapp.data.datamodels.Continents
 import com.example.laenderapp.data.datamodels.QuizQuestion
+import com.example.laenderapp.data.datamodels.QuizResult
 import com.example.laenderapp.data.local.getDatabase
 import com.example.laenderapp.data.remote.AppRepository
 import com.example.laenderapp.remotes.CountryApi
@@ -45,21 +46,11 @@ class MainViewModel(application: Application) : AndroidViewModel(application) {
         return quizQuestion
     }
 
-    // Funktion zum Initialisieren der Quizfragen mit Flaggen europäischer Länder
-    /*fun initializeQuizQuestions() {
-        europeCountriesLiveData.value?.let { europeCountries ->
-            // Füge für jedes europäische Land eine Quizfrage hinzu
-            quizQuestions.clear()
-            for (country in europeCountries) {
-                // Erstelle eine Quizfrage mit der Flagge des Landes
-                val quizQuestion = QuizQuestion(country.flag, listOf(country.country))
-                quizQuestions.add(quizQuestion)
-            }
-        }
-    }
-    // ...*/
-
     fun continentsList() {
         viewModelScope.launch { repository.getContinents() }
+    }
+
+    fun insertQuiz(quizResult: QuizResult) {
+        viewModelScope.launch { repository.insertQuizResult(quizResult) }
     }
 }

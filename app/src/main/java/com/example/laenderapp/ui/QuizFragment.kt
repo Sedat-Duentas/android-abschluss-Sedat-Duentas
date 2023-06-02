@@ -29,19 +29,16 @@ class QuizFragment : Fragment() {
 
     private val viewModel: MainViewModel by activityViewModels()
 
-    private val repository = AppRepository(CountryApi, getDatabase(requireContext()))
-
-    private var laenderListe = listOf<Country>()
+    private var countryList = listOf<Country>()
 
     private var currentIndex = 0
 
-    private val currentCountry: Country
-        get() = laenderListe[currentIndex]
+    private var currentCountry: Country? = null
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        laenderListe = viewModel.europeCountriesLiveData.value!!.shuffled()
+
     }
 
     override fun onCreateView(
@@ -62,34 +59,43 @@ class QuizFragment : Fragment() {
             findNavController().navigate(QuizFragmentDirections.actionQuizFragmentToHomeFragment())
         }
 
-        showCountry()
+        viewModel.europeCountriesLiveData.observe(
+            viewLifecycleOwner
+        ) {
+            countryList = it.shuffled()
+            currentCountry = countryList[currentIndex]
 
-        val onClick: (View) -> Unit = {
+            showCountry()
+
+            val onClick: (View) -> Unit = {
                 val btn = it as Button
 
-                if (btn.text == currentCountry.country) {
-                    val quizResult: QuizResult = QuizResult(currentCountry.continent, currentCountry.country,true)
+
+
+                if (btn.text == currentCountry!!.country) {
+                    val quizResult: QuizResult =
+                        QuizResult(currentCountry!!.continent, currentCountry!!.country, true)
                     btn.setBackgroundResource(R.color.green)
 
-                    insertQuizResult(quizResult)
+                    viewModel.insertQuiz(quizResult)
 
 
                 } else {
-                    val quizResult: QuizResult = QuizResult(currentCountry.continent, currentCountry.country,false)
+                    val quizResult: QuizResult =
+                        QuizResult(currentCountry!!.continent, currentCountry!!.country, false)
                     btn.setBackgroundResource(R.color.red)
                 }
                 // TODO QuizResult in die Datenbank
 
                 currentIndex++
                 showCountry()
+            }
 
+            binding.btn1Quiz.setOnClickListener(onClick)
+            binding.btn2Quiz.setOnClickListener(onClick)
+            binding.btn3Quiz.setOnClickListener(onClick)
+            binding.btn4Quiz.setOnClickListener(onClick)
         }
-
-        binding.btn1Quiz.setOnClickListener(onClick)
-        binding.btn2Quiz.setOnClickListener(onClick)
-        binding.btn3Quiz.setOnClickListener(onClick)
-        binding.btn4Quiz.setOnClickListener(onClick)
-
 
         //TODO hier kommen die Knöpfe wie unten, random aber auch überprüfen das nicht das koreekte land mitgenommen wird
         //TODO überprüfen welcher knopf gedrückt wurde, also text von curentcountry ob der richtig ist
@@ -97,12 +103,13 @@ class QuizFragment : Fragment() {
         //TODO background wird gesetzt, je nach klick
 
     }
+
     fun generateRandomOptions(correctOption: String): List<String> {
         val options = mutableListOf<String>()
         options.add(correctOption)
 
         // Zufällige Auswahl von drei weiteren Ländern aus der countryList
-        val shuffledList = laenderListe.shuffled()
+        val shuffledList = countryList.shuffled()
         val randomOptions = shuffledList.subList(0, 3)
         randomOptions.forEach { country ->
             options.add(country.country)
@@ -115,50 +122,16 @@ class QuizFragment : Fragment() {
     }
 
     fun showCountry() {
+
         val url =
-            "https://public.syntax-institut.de/apps/batch6/SedatDuentas/images/" + currentCountry.flag
+            "https://public.syntax-institut.de/apps/batch6/SedatDuentas/images/" + currentCountry!!.flag
         binding.ivQuizFlag.load(url.toUri().buildUpon().scheme("https").build())
 
-        val options = generateRandomOptions(currentCountry.country)
+        val options = generateRandomOptions(currentCountry!!.country)
         binding.btn1Quiz.text = options[0]
         binding.btn2Quiz.text = options[1]
         binding.btn3Quiz.text = options[2]
         binding.btn4Quiz.text = options[3]
-
-
     }
-
-    fun insertQuizResult(quizResult: QuizResult) {
-        viewModel.viewModelScope.launch {
-            repository.insertQuizResult(quizResult)
-        }
-    }
-
-
 }
-
-
-/*
-        fun checkAnswer(quizQuestion: QuizResult, selectedOption: String) {
-            val correctOption = quizQuestion.correct
-
-            if (selectedOption == correct) {
-                binding.btn3Quiz.setBackgroundResource(R.color.green)
-                // Progressbar erhöhen
-                //nextFlag()
-            } else {
-                binding.btn3Quiz.setBackgroundResource(R.color.red)
-            }
-        }
-
-        fun nextFlag() {
-
-        }
-
-        var btn = listOf(binding.btn1Quiz, binding.btn2Quiz, binding.btn3Quiz, binding.btn4Quiz)
-
-            if (btn == correct) {
-                var randomBtn = btn.random()
-
-                randomBtn.text = "Deutschland"*/
 

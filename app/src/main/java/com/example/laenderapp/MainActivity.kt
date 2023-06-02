@@ -20,15 +20,4 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
     }
-
-    override fun onCreateView(name: String, context: Context, attrs: AttributeSet): View? {
-        // Ohne das geht es nicht!!!
-        viewModel.europeCountriesLiveData.observe(
-            this
-        ) {
-            Log.d("viemodelTest","$it" )
-        }
-
-        return super.onCreateView(name, context, attrs)
-    }
 }

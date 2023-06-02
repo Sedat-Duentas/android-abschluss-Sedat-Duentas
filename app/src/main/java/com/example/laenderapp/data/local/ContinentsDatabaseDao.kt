@@ -18,9 +18,6 @@ interface ContinentsDatabaseDao {
     @Insert (onConflict = OnConflictStrategy.REPLACE)
     suspend fun insertQuizResult(quizResult: QuizResult)
 
-    /*@Query("SELECT * from Country")
-    fun getAllCountries() : LiveData<List<Country>>*/
-
     @Query("SELECT * from Country WHERE continent = :continent")
     fun getAllCountriesByContinent(continent: String): LiveData<List<Country>>
 
