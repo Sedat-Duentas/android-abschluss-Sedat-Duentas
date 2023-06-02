@@ -8,6 +8,7 @@ import android.view.ViewGroup
 import android.widget.Button
 import androidx.core.net.toUri
 import androidx.databinding.DataBindingUtil
+import androidx.fragment.app.FragmentActivity
 import androidx.fragment.app.activityViewModels
 import androidx.lifecycle.viewModelScope
 import androidx.navigation.fragment.findNavController
@@ -28,7 +29,7 @@ class QuizFragment : Fragment() {
 
     private val viewModel: MainViewModel by activityViewModels()
 
-    //private val repository = AppRepository(CountryApi, getDatabase(context = application))
+    private val repository = AppRepository(CountryApi, getDatabase(requireContext()))
 
     private var laenderListe = listOf<Country>()
 
@@ -70,7 +71,7 @@ class QuizFragment : Fragment() {
                     val quizResult: QuizResult = QuizResult(currentCountry.continent, currentCountry.country,true)
                     btn.setBackgroundResource(R.color.green)
 
-                    //insertQuizResult(quizResult)
+                    insertQuizResult(quizResult)
 
 
                 } else {
@@ -127,12 +128,11 @@ class QuizFragment : Fragment() {
 
     }
 
-  /*  fun insertQuizResult(quizResult: QuizResult) {
+    fun insertQuizResult(quizResult: QuizResult) {
         viewModel.viewModelScope.launch {
-            repository
+            repository.insertQuizResult(quizResult)
         }
-        viewModelScope.launch { repository.getContinents() }
-    }*/
+    }
 
 
 }
