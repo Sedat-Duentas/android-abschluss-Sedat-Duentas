@@ -34,6 +34,7 @@ class ContinetsAdapter (
         holder.binding.mcItem.setOnClickListener {
             holder.binding.mcItem.findNavController()
                 .navigate(ContinentsFragmentDirections.actionContinentsFragmentToQuizFragment())
+            //information continent als argument
         }
     }
 

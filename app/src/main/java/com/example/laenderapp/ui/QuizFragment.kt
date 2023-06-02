@@ -6,10 +6,12 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
+import androidx.core.content.ContextCompat
 import androidx.core.net.toUri
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.FragmentActivity
 import androidx.fragment.app.activityViewModels
+import androidx.lifecycle.lifecycleScope
 import androidx.lifecycle.viewModelScope
 import androidx.navigation.fragment.findNavController
 import coil.load
@@ -21,6 +23,7 @@ import com.example.laenderapp.data.local.getDatabase
 import com.example.laenderapp.data.remote.AppRepository
 import com.example.laenderapp.databinding.FragmentQuizBinding
 import com.example.laenderapp.remotes.CountryApi
+import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 
 // Für Notizen siehe HomeFragment
@@ -33,11 +36,9 @@ class QuizFragment : Fragment() {
 
     private var currentIndex = 0
 
-    private var currentCountry: Country? = null
-
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        // argumente hier rausholen
 
     }
 
@@ -58,37 +59,40 @@ class QuizFragment : Fragment() {
         binding.mcQuizCityHome.setOnClickListener {
             findNavController().navigate(QuizFragmentDirections.actionQuizFragmentToHomeFragment())
         }
+        //viewModel.selectContinent("asia")
 
-        viewModel.europeCountriesLiveData.observe(
+        viewModel.selectedCountriesLiveData.observe(
             viewLifecycleOwner
         ) {
             countryList = it.shuffled()
-            currentCountry = countryList[currentIndex]
 
             showCountry()
 
-            val onClick: (View) -> Unit = {
-                val btn = it as Button
-
-
-
-                if (btn.text == currentCountry!!.country) {
+            val onClick: (View) -> Unit = {view->
+                val btn = view as Button
+                val currentCountry = countryList[currentIndex]
+                if (btn.text == currentCountry.country) {
                     val quizResult: QuizResult =
-                        QuizResult(currentCountry!!.continent, currentCountry!!.country, true)
-                    btn.setBackgroundResource(R.color.green)
+                        QuizResult(currentCountry.continent, currentCountry.country, true)
+                    btn.backgroundTintList = ContextCompat.getColorStateList(requireContext(), R.color.green)
 
                     viewModel.insertQuiz(quizResult)
 
-
                 } else {
                     val quizResult: QuizResult =
-                        QuizResult(currentCountry!!.continent, currentCountry!!.country, false)
-                    btn.setBackgroundResource(R.color.red)
+                        QuizResult(currentCountry.continent, currentCountry.country, false)
+                    btn.backgroundTintList = ContextCompat.getColorStateList(requireContext(), R.color.red)
                 }
                 // TODO QuizResult in die Datenbank
 
-                currentIndex++
-                showCountry()
+                lifecycleScope.launch {
+                    delay(1500)
+                    currentIndex++
+                    showCountry()
+                }
+
+                /*currentIndex++
+                showCountry()*/
             }
 
             binding.btn1Quiz.setOnClickListener(onClick)
@@ -122,16 +126,21 @@ class QuizFragment : Fragment() {
     }
 
     fun showCountry() {
-
+        val currentCountry = countryList[currentIndex]
         val url =
-            "https://public.syntax-institut.de/apps/batch6/SedatDuentas/images/" + currentCountry!!.flag
+            "https://public.syntax-institut.de/apps/batch6/SedatDuentas/images/" + currentCountry.flag
         binding.ivQuizFlag.load(url.toUri().buildUpon().scheme("https").build())
 
-        val options = generateRandomOptions(currentCountry!!.country)
+        val options = generateRandomOptions(currentCountry.country)
         binding.btn1Quiz.text = options[0]
         binding.btn2Quiz.text = options[1]
         binding.btn3Quiz.text = options[2]
         binding.btn4Quiz.text = options[3]
+        binding.btn1Quiz.backgroundTintList = ContextCompat.getColorStateList(requireContext(), R.color.orange)
+        binding.btn2Quiz.backgroundTintList = ContextCompat.getColorStateList(requireContext(), R.color.orange)
+        binding.btn3Quiz.backgroundTintList = ContextCompat.getColorStateList(requireContext(), R.color.orange)
+        binding.btn4Quiz.backgroundTintList = ContextCompat.getColorStateList(requireContext(), R.color.orange)
+        // randfälle beachten, doppeltklick
     }
 }
 

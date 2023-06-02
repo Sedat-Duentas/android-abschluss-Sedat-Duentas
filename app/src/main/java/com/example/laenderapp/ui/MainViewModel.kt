@@ -26,6 +26,7 @@ class MainViewModel(application: Application) : AndroidViewModel(application) {
     val northAmericaCountriesLiveData = repository.northAmericaCountries
     val southAmericaCountriesLiveData = repository.southAmericaCountries
     val oceaniaCountriesLiveData = repository.oceaniaCountries
+    var selectedCountriesLiveData = europeCountriesLiveData
 
     private val quizQuestions = mutableListOf<QuizQuestion>()
 
@@ -52,5 +53,15 @@ class MainViewModel(application: Application) : AndroidViewModel(application) {
 
     fun insertQuiz(quizResult: QuizResult) {
         viewModelScope.launch { repository.insertQuizResult(quizResult) }
+    }
+
+    fun selectContinent(continent: String) {
+        when (continent) {
+            "europe" -> selectedCountriesLiveData = europeCountriesLiveData
+            "asia" -> selectedCountriesLiveData = europeCountriesLiveData
+            "africa" -> selectedCountriesLiveData = europeCountriesLiveData
+            "europe" -> selectedCountriesLiveData = europeCountriesLiveData
+            "europe" -> selectedCountriesLiveData = europeCountriesLiveData
+        }
     }
 }
