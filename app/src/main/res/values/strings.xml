@@ -4,7 +4,7 @@
     <string name="europe">EUROPA</string>
     <string name="asia">ASIEN</string>
     <string name="africa">AFRIKA</string>
-    <string name="northamerica">NORDAMERIKA</string>
-    <string name="suedamerica">SÜDAMERIKA</string>
-    <string name="ozeanien">OZEANIEN</string>
+    <string name="northAmerica">NORDAMERIKA</string>
+    <string name="southAmerica">SÜDAMERIKA</string>
+    <string name="oceania">OZEANIEN</string>
 </resources>

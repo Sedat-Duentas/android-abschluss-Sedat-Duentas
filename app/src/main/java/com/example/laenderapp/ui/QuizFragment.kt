@@ -1,6 +1,7 @@
 package com.example.laenderapp.ui
 
 import android.os.Bundle
+import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
@@ -39,7 +40,13 @@ class QuizFragment : Fragment() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         // argumente hier rausholen
-
+        arguments?.let {
+            val continentId = it.getInt("continentNameRessourceId")
+            val resourceName = resources.getResourceName(continentId)
+            val continentName = resourceName.substringAfterLast("/")
+            Log.d("continentDebug",continentName)
+            viewModel.selectContinent(continentName)
+        }
     }
 
     override fun onCreateView(
@@ -100,12 +107,6 @@ class QuizFragment : Fragment() {
             binding.btn3Quiz.setOnClickListener(onClick)
             binding.btn4Quiz.setOnClickListener(onClick)
         }
-
-        //TODO hier kommen die Knöpfe wie unten, random aber auch überprüfen das nicht das koreekte land mitgenommen wird
-        //TODO überprüfen welcher knopf gedrückt wurde, also text von curentcountry ob der richtig ist
-        //TODO wenn ja dann wird QuizResult auf true gesetzt andernfalls auf false
-        //TODO background wird gesetzt, je nach klick
-
     }
 
     fun generateRandomOptions(correctOption: String): List<String> {
@@ -140,7 +141,8 @@ class QuizFragment : Fragment() {
         binding.btn2Quiz.backgroundTintList = ContextCompat.getColorStateList(requireContext(), R.color.orange)
         binding.btn3Quiz.backgroundTintList = ContextCompat.getColorStateList(requireContext(), R.color.orange)
         binding.btn4Quiz.backgroundTintList = ContextCompat.getColorStateList(requireContext(), R.color.orange)
-        // randfälle beachten, doppeltklick
+        // randfälle beachten(selbe antwort),
+    // doppeltklick, wenn fertig ist stürtzt ein, bei fehler darf es nicht weiter gehen
     }
 }
 

@@ -44,9 +44,6 @@
         <action
             android:id="@+id/action_continentsFragment_to_homeFragment"
             app:destination="@id/homeFragment" />
-        <action
-            android:id="@+id/action_continentsFragment_to_quizCityFragment"
-            app:destination="@id/quizCityFragment" />
     </fragment>
     <fragment
         android:id="@+id/quizFragment"
@@ -58,11 +55,10 @@
         <action
             android:id="@+id/action_quizFragment_to_homeFragment"
             app:destination="@id/homeFragment" />
+        <argument
+            android:name="continentNameRessourceId"
+            app:argType="integer" />
     </fragment>
-    <fragment
-        android:id="@+id/quizCityFragment"
-        android:name="com.example.laenderapp.ui.QuizCityFragment"
-        android:label="QuizCityFragment" />
     <fragment
         android:id="@+id/logFragment"
         android:name="com.example.laenderapp.ui.LogFragment"

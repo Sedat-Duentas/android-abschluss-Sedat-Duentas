@@ -33,13 +33,12 @@ class ContinetsAdapter (
 
         holder.binding.mcItem.setOnClickListener {
             holder.binding.mcItem.findNavController()
-                .navigate(ContinentsFragmentDirections.actionContinentsFragmentToQuizFragment())
-            //information continent als argument
+                .navigate(ContinentsFragmentDirections.actionContinentsFragmentToQuizFragment(item.stringResource))
+                // Hier wird die Information, welcher Kontinent als Argument übergeben wird, mitgegeben
         }
     }
 
-    // Damit der Layoutmanager weiß wie lang die Liste ist
     override fun getItemCount(): Int {
-        return dataset.size
+        return dataset.size // Damit der Layoutmanager weiß wie lang die Liste ist
     }
 }

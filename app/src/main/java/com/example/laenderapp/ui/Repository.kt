@@ -13,9 +13,9 @@ class Repository {
             Adaptermodel(R.string.europe, R.drawable.europe),
             Adaptermodel(R.string.asia, R.drawable.asia),
             Adaptermodel(R.string.africa, R.drawable.africa),
-            Adaptermodel(R.string.northamerica, R.drawable.nordamerika),
-            Adaptermodel(R.string.suedamerica, R.drawable.suedamerika),
-            Adaptermodel(R.string.ozeanien, R.drawable.ozeanien),
+            Adaptermodel(R.string.northAmerica, R.drawable.nordamerika),
+            Adaptermodel(R.string.southAmerica, R.drawable.suedamerika),
+            Adaptermodel(R.string.oceania, R.drawable.ozeanien),
         )
         return adaptermodels
     }

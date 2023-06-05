@@ -42,9 +42,9 @@ class HomeFragment : Fragment() {
         binding.mcHomeNewGame.setOnClickListener {
             findNavController().navigate(HomeFragmentDirections.actionHomeFragmentToGameSelectionFragment())
         }
-
+/*
         binding.mcHomeContinueGame.setOnClickListener {
             findNavController().navigate(HomeFragmentDirections.actionHomeFragmentToQuizFragment())
-        }
+        }*/
     }
 }
