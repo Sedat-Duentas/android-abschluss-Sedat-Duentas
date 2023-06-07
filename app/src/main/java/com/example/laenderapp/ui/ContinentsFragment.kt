@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
+import androidx.fragment.app.activityViewModels
 import androidx.navigation.fragment.findNavController
 import com.example.laenderapp.R
 import com.example.laenderapp.adapter.ContinetsAdapter
@@ -14,6 +15,8 @@ import com.example.laenderapp.databinding.FragmentContinentsBinding
 class ContinentsFragment : Fragment() {
     //wir nutzen binding für unser fragment und deklarieren eine leere variable vom Typ FragmentContinentsBinding
     private lateinit var binding: FragmentContinentsBinding
+
+    private val viewModel: MainViewModel by activityViewModels()
 
     //in der onCreateView wird das layout grob erstellt, container, größe etc
     override fun onCreateView(
@@ -36,7 +39,7 @@ class ContinentsFragment : Fragment() {
         val continents = Repository().loadContinents()
 
         // ContinetsAdapter wird als Adapter mit der übergebenen liste festgelegt
-        recyclerView.adapter = ContinetsAdapter(continents)
+        recyclerView.adapter = ContinetsAdapter(continents, viewModel, requireContext())
 
         // Verbessert die Performance bei fester größe
         recyclerView.setHasFixedSize(true)

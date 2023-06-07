@@ -1,6 +1,7 @@
 package com.example.laenderapp.ui
 
 import android.os.Bundle
+import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
@@ -33,7 +34,11 @@ class HomeFragment : Fragment() {
     //wir benutzen den navcontroller um unsere navigation aus dem nav_graph durchzuführen
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
 
-        viewModel.continentsList()
+        viewModel.europeCountriesLiveData.observe(
+            viewLifecycleOwner
+        ) {
+            Log.d("liveData", "$it")
+        }
 
         binding.mcHomeAccountImage.setOnClickListener {
             findNavController().navigate(HomeFragmentDirections.actionHomeFragmentToLogFragment())
