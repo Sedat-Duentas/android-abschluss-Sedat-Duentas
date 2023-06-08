@@ -23,7 +23,7 @@ class MainViewModel(application: Application) : AndroidViewModel(application) {
 
     val europeCountriesLiveData = repository.europeCountries
     val asiaCountriesLiveData = repository.asiaCountries
-    val africaCountriesLiveData = repository.africaCountriesCountries
+    val africaCountriesLiveData = repository.africaCountries
     val northAmericaCountriesLiveData = repository.northAmericaCountries
     val southAmericaCountriesLiveData = repository.southAmericaCountries
     val oceaniaCountriesLiveData = repository.oceaniaCountries

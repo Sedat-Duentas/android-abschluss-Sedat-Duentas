@@ -58,6 +58,9 @@
         <argument
             android:name="continentNameRessourceId"
             app:argType="integer" />
+        <action
+            android:id="@+id/action_quizFragment_to_resultFragment"
+            app:destination="@id/resultFragment" />
     </fragment>
     <fragment
         android:id="@+id/logFragment"
@@ -74,5 +77,8 @@
         <action
             android:id="@+id/action_resultFragment_to_homeFragment"
             app:destination="@id/homeFragment" />
+        <argument
+            android:name="progress"
+            app:argType="integer" />
     </fragment>
 </navigation>

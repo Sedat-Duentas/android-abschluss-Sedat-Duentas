@@ -37,6 +37,10 @@ class QuizFragment : Fragment() {
 
     private var currentIndex = 0
 
+    private var progress = 1
+
+    private var totalQuestions = 0
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         // argumente hier rausholen
@@ -44,7 +48,7 @@ class QuizFragment : Fragment() {
             val continentId = it.getInt("continentNameRessourceId")
             val resourceName = resources.getResourceName(continentId)
             val continentName = resourceName.substringAfterLast("/")
-            Log.d("continentDebug",continentName)
+            Log.d("continentDebug", continentName)
             viewModel.selectContinent(continentName)
         }
     }
@@ -65,7 +69,18 @@ class QuizFragment : Fragment() {
 
         binding.mcQuizCityHome.setOnClickListener {
             findNavController().navigate(QuizFragmentDirections.actionQuizFragmentToHomeFragment())
+
         }
+
+        /*// Prüfen, ob das Quiz beendet ist und zur Ergebnisseite navigieren
+        if (currentIndex >= countryList.size) {
+            binding.tv
+            val action = QuizFragmentDirections.actionQuizFragmentToResultFragment(progress)
+            findNavController().navigate(action)
+        } else {
+
+    }*/
+
         //viewModel.selectContinent("asia")
 
         viewModel.selectedCountriesLiveData.observe(
@@ -73,22 +88,28 @@ class QuizFragment : Fragment() {
         ) {
             countryList = it.shuffled()
 
+            totalQuestions = countryList.size
             showCountry()
 
-            val onClick: (View) -> Unit = {view->
+            val onClick: (View) -> Unit = { view ->
                 val btn = view as Button
                 val currentCountry = countryList[currentIndex]
                 if (btn.text == currentCountry.country) {
                     val quizResult: QuizResult =
                         QuizResult(currentCountry.continent, currentCountry.country, true)
-                    btn.backgroundTintList = ContextCompat.getColorStateList(requireContext(), R.color.green)
+                    btn.backgroundTintList =
+                        ContextCompat.getColorStateList(requireContext(), R.color.green)
 
                     viewModel.insertQuiz(quizResult)
+
+                    progress++
+                    //binding.tvProgress.text = "$progress/$totalQuestions"
 
                 } else {
                     val quizResult: QuizResult =
                         QuizResult(currentCountry.continent, currentCountry.country, false)
-                    btn.backgroundTintList = ContextCompat.getColorStateList(requireContext(), R.color.red)
+                    btn.backgroundTintList =
+                        ContextCompat.getColorStateList(requireContext(), R.color.red)
                 }
                 // TODO QuizResult in die Datenbank
 
@@ -114,10 +135,23 @@ class QuizFragment : Fragment() {
         options.add(correctOption)
 
         // Zufällige Auswahl von drei weiteren Ländern aus der countryList
-        val shuffledList = countryList.shuffled()
+        /*val shuffledList = countryList.shuffled()
         val randomOptions = shuffledList.subList(0, 3)
         randomOptions.forEach { country ->
             options.add(country.country)
+        }*/
+
+        while (options.size <= 3) {
+            val shuffledList = countryList.shuffled()
+            val randomOptions = shuffledList.subList(0, 3)
+
+            randomOptions.forEach { country ->
+                if (country.country != correctOption) {
+                    options.add(country.country)
+                } else {
+
+                }
+            }
         }
 
         // Die Optionen werden zufällig sortiert
@@ -132,17 +166,27 @@ class QuizFragment : Fragment() {
             "https://public.syntax-institut.de/apps/batch6/SedatDuentas/images/" + currentCountry.flag
         binding.ivQuizFlag.load(url.toUri().buildUpon().scheme("https").build())
 
+        binding.tvProgress.text = "${currentIndex + 1}/$totalQuestions" // Aktualisierung der Zahl
+
         val options = generateRandomOptions(currentCountry.country)
         binding.btn1Quiz.text = options[0]
         binding.btn2Quiz.text = options[1]
         binding.btn3Quiz.text = options[2]
         binding.btn4Quiz.text = options[3]
-        binding.btn1Quiz.backgroundTintList = ContextCompat.getColorStateList(requireContext(), R.color.orange)
-        binding.btn2Quiz.backgroundTintList = ContextCompat.getColorStateList(requireContext(), R.color.orange)
-        binding.btn3Quiz.backgroundTintList = ContextCompat.getColorStateList(requireContext(), R.color.orange)
-        binding.btn4Quiz.backgroundTintList = ContextCompat.getColorStateList(requireContext(), R.color.orange)
-        // randfälle beachten(selbe antwort),
-    // doppeltklick, wenn fertig ist stürtzt ein, bei fehler darf es nicht weiter gehen
+        binding.btn1Quiz.backgroundTintList =
+            ContextCompat.getColorStateList(requireContext(), R.color.orange)
+        binding.btn2Quiz.backgroundTintList =
+            ContextCompat.getColorStateList(requireContext(), R.color.orange)
+        binding.btn3Quiz.backgroundTintList =
+            ContextCompat.getColorStateList(requireContext(), R.color.orange)
+        binding.btn4Quiz.backgroundTintList =
+            ContextCompat.getColorStateList(requireContext(), R.color.orange)
+
+        if (currentIndex == countryList.size - 1) {
+            val action = QuizFragmentDirections.actionQuizFragmentToResultFragment(progress)
+            findNavController().navigate(action)
+        }
+        // doppeltklick, wenn fertig ist stürtzt ein, bei fehler darf es nicht weiter gehen
     }
 }
 
