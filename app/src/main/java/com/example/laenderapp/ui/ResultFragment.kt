@@ -35,7 +35,7 @@ class ResultFragment : Fragment() {
 
         val numFlags = args.progress
 
-        binding.tvResultPoints.text = numFlags.toString()
+        binding.tvResultPoints.text = numFlags.toString() + " Flaggen von YYEuropasYY abgeschlossen!"
     }
 
 }
