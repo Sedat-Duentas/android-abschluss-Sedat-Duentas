@@ -14,8 +14,6 @@ import com.example.laenderapp.ui.MainViewModel
 // Hier wird nichts geändert da, jetzt alles in den Fragmenten passiert
 class MainActivity : AppCompatActivity() {
 
-    private val viewModel: MainViewModel by viewModels()
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)

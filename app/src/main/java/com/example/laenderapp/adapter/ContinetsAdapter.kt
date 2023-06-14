@@ -10,7 +10,7 @@ import com.example.laenderapp.ui.ContinentsFragmentDirections
 
 // Die Liste von Kontinenten wird übergeben und RecyclerView wird vorbereitet
 class ContinetsAdapter (
-    private val dataset: List<Adaptermodel>
+    private val dataset: List<Adaptermodel>, private val gameMode: String
 ) : RecyclerView.Adapter<ContinetsAdapter.ItemViewHolder>() {
 
     // Der Viewholder weiß welche Teile des Layouts beim Recycling angepasst werden
@@ -32,9 +32,29 @@ class ContinetsAdapter (
         holder.binding.tvItem.setText(item.stringResource)
 
         holder.binding.mcItem.setOnClickListener {
-            holder.binding.mcItem.findNavController()
-                .navigate(ContinentsFragmentDirections.actionContinentsFragmentToQuizFragment(item.stringResource))
-                // Hier wird die Information, welcher Kontinent als Argument übergeben wird, mitgegeben
+            when (gameMode) {
+                "currency" -> {
+                    val action = ContinentsFragmentDirections.actionContinentsFragmentToCurrencyQuizFragment(item.stringResource)
+                    holder.binding.mcItem.findNavController().navigate(action)
+                }
+                "flag" -> {
+                    val action = ContinentsFragmentDirections.actionContinentsFragmentToQuizFragment(item.stringResource)
+                    holder.binding.mcItem.findNavController().navigate(action)
+                }
+                "city" -> {
+                    /*val action = ContinentsFragmentDirections.actionContinentsFragmentToQuizFragment(item.stringResource)
+                    holder.binding.mcItem.findNavController().navigate(action)*/
+                }
+                else -> {
+                    // Fallback-Verhalten, falls der gameMode unbekannt ist
+                }
+            }
+
+
+            /*holder.binding.mcItem.findNavController()
+                .navigate(ContinentsFragmentDirections.actionContinentsFragmentToCurrencyQuizFragment(item.stringResource))
+                //actionContinentsFragmentToQuizFragment(item.stringResource))
+                // Hier wird die Information, welcher Kontinent als Argument übergeben wird, mitgegeben*/
         }
     }
 

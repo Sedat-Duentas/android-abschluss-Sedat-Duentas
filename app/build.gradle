@@ -33,6 +33,7 @@ android {
         jvmTarget = '17'
     }
 
+    // DataBinding
     buildFeatures {
         dataBinding true
     }
@@ -51,7 +52,6 @@ dependencies {
     // Navigation
     implementation "androidx.navigation:navigation-fragment-ktx:$nav_version"
     implementation "androidx.navigation:navigation-ui-ktx:$nav_version"
-    //implementation "androidx.navigation:navigation-safe-args-gradle-plugin"
 
     // Retrofit
     implementation "com.squareup.retrofit2:retrofit:$retrofit_version"
@@ -67,6 +67,5 @@ dependencies {
     // Room Dependencies
     implementation "androidx.room:room-runtime:$room_version"
     kapt "androidx.room:room-compiler:$room_version"
-    //annotationProcessor("androidx.room:room-compiler:$room_version")
     implementation "androidx.room:room-ktx:$room_version"
 }

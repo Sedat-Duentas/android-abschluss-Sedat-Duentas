@@ -67,10 +67,11 @@
             android:layout_marginStart="42dp"
             android:layout_marginEnd="42dp"
             android:layout_marginBottom="54dp"
-            android:text="die YYFlaggenYY YYEuropasYY abgeschlossen!"
+            android:text="die YYFlaggenYY YYEuropasYY erraten!"
             android:textColor="@color/black"
-            android:textSize="16dp"
+            android:textSize="20dp"
             android:textStyle="bold"
+            android:textAlignment="center"
             app:layout_constraintBottom_toTopOf="@+id/resultHomeButton"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent" />

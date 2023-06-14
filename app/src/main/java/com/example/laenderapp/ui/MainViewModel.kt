@@ -14,13 +14,25 @@ import com.example.laenderapp.data.remote.AppRepository
 import com.example.laenderapp.remotes.CountryApi
 import kotlinx.coroutines.launch
 
+// Die Variable definiert eine Konstante mit dem Namen TAG, die den Wert "MainViewModel" hat. Und wird verwendet, um Lognachrichten zu identifizieren und zu filtern.
 const val TAG = "MainViewModel"
 
 class MainViewModel(application: Application) : AndroidViewModel(application) {
 
+    // Erstellung eines AppRepository-Objekts unter Verwendung des CountryApi und der Datenbank aus der Anwendung
     private val repository = AppRepository(CountryApi, getDatabase(context = application))
 
+    // Eine verschachtelte Variable für den Benutzer wird erstellt
+    private var _userName = ""
+    val userName: String
+        get() = _userName
 
+    // Funktion zum Festlegen des Benutzernamens
+    fun setUserName(userName: String) {
+        _userName = userName
+    }
+
+    // LiveData-Objekte für Länderlisten nach Kontinenten
     val europeCountriesLiveData = repository.europeCountries
     val asiaCountriesLiveData = repository.asiaCountries
     val africaCountriesLiveData = repository.africaCountries
@@ -28,35 +40,23 @@ class MainViewModel(application: Application) : AndroidViewModel(application) {
     val southAmericaCountriesLiveData = repository.southAmericaCountries
     val oceaniaCountriesLiveData = repository.oceaniaCountries
 
+    // LiveData-Objekt für ausgewählte Länderliste (Standard: Europa)
     var selectedCountriesLiveData = europeCountriesLiveData
 
+    // Eine Liste von Quizfragen
     private val quizQuestions = mutableListOf<QuizQuestion>()
 
-    // Funktion zum Generieren einer Quizfrage für die Flagge eines europäischen Landes
-   /* fun generateQuizQuestion(): QuizQuestion? {
-        if (quizQuestions.isEmpty()) {
-            // Wenn alle Fragen beantwortet wurden, ist das Quiz beendet
-            return null
-        }
-
-        // Wähle zufällig eine Frage aus der Liste
-        val randomIndex = (0 until quizQuestions.size).random()
-        val quizQuestion = quizQuestions[randomIndex]
-
-        // Entferne die ausgewählte Frage aus der Liste
-        quizQuestions.removeAt(randomIndex)
-
-        return quizQuestion
-    }*/
-
+    // Funktion zum Abrufen der Kontinentenliste
     fun continentsList() {
         viewModelScope.launch { repository.getContinents() }
     }
 
+    // Funktion zum Einfügen eines Quizergebnisses
     fun insertQuiz(quizResult: QuizResult) {
         viewModelScope.launch { repository.insertQuizResult(quizResult) }
     }
 
+    // Funktion zum Auswählen einer Länderliste basierend auf dem ausgewählten Kontinent
     fun selectContinent(continent: String) {
         when (continent) {
             "europe" -> selectedCountriesLiveData = europeCountriesLiveData

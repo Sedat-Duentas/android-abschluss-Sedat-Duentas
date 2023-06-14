@@ -6,6 +6,7 @@ import com.example.laenderapp.data.datamodels.Adaptermodel
 // Hier wird aus der Continents Klasse eine funktion erstellt,
 // die eine Liste aus den einzelnen Kontinenten erstellt und diese zurückgibt.
 // Hierzu werden die einzelnen Objekte mit den werten initialisiert, die in den Ressourcen sind.
+// Diese wird dann benutzt um die Kontinente im ContinentFragment korrekt anzuzeigen
 class Repository {
 
     fun loadContinents() : List<Adaptermodel> {

@@ -11,13 +11,15 @@ import androidx.navigation.fragment.findNavController
 import com.example.laenderapp.R
 import com.example.laenderapp.databinding.FragmentGameSelectionBinding
 
-// Für Notizen siehe HomeFragment
 class GameSelectionFragment : Fragment() {
 
+    // Die Instanz der generierten Binding-Klasse, die Zugriff auf die Views des Fragments bietet.
     private lateinit var binding: FragmentGameSelectionBinding
 
+    // Die Instanz des MainViewModel, welches Zugriff auf die Daten und Funktionen des ViewModels bietet.
     private val viewModel: MainViewModel by activityViewModels()
 
+    // In der onCreateView wird das layout grob erstellt, container, größe etc
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
@@ -27,17 +29,18 @@ class GameSelectionFragment : Fragment() {
         return binding.root
     }
 
+    // Wir benutzen den navcontroller um unsere navigation aus dem nav_graph durchzuführen
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         binding.selectionCardViewFlags.setOnClickListener {
-            findNavController().navigate(GameSelectionFragmentDirections.actionGameSelectionFragmentToContinentsFragment())
+            findNavController().navigate(GameSelectionFragmentDirections.actionGameSelectionFragmentToContinentsFragment("flag"))
         }
 
         binding.selectionCardViewCity.setOnClickListener {
-            findNavController().navigate(GameSelectionFragmentDirections.actionGameSelectionFragmentToContinentsFragment())
+            findNavController().navigate(GameSelectionFragmentDirections.actionGameSelectionFragmentToContinentsFragment("city"))
         }
 
         binding.selectionCardViewCurrency.setOnClickListener {
-            findNavController().navigate(GameSelectionFragmentDirections.actionGameSelectionFragmentToContinentsFragment())
+            findNavController().navigate(GameSelectionFragmentDirections.actionGameSelectionFragmentToContinentsFragment("currency"))
         }
 
         binding.mcQuizCityArrowLeft.setOnClickListener {
