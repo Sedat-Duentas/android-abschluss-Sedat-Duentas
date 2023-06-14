@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">LaenderApp</string>
-    <!-- TODO: Remove or change this placeholder text -->
+    <!-- Hier sind die Namen der Kontinente eingespeichert -->
     <string name="europe">EUROPA</string>
     <string name="asia">ASIEN</string>
     <string name="africa">AFRIKA</string>

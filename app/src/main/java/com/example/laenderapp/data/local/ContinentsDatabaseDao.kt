@@ -21,6 +21,12 @@ interface ContinentsDatabaseDao {
     @Query("SELECT * from Country WHERE continent = :continent")
     fun getAllCountriesByContinent(continent: String): LiveData<List<Country>>
 
+/*    @Query("SELECT * from capital WHERE continent = :continet")
+    fun getAllCapitalByContinent(continent: String): LiveData<List<Country>>
+
+    @Query("SELECT * from currency WHERE continent = :continet")
+    fun getAllCurrencyByContinent(continent: String): LiveData<List<Country>>*/
+
     @Query("DELETE from Country")
     fun deleteCountries()
 

@@ -6,30 +6,38 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
-import androidx.fragment.app.activityViewModels
 import androidx.navigation.fragment.findNavController
 import com.example.laenderapp.R
 import com.example.laenderapp.adapter.ContinetsAdapter
 import com.example.laenderapp.databinding.FragmentContinentsBinding
 
 class ContinentsFragment : Fragment() {
-    //wir nutzen binding für unser fragment und deklarieren eine leere variable vom Typ FragmentContinentsBinding
+
+    // Wir nutzen binding für unser fragment und deklarieren eine leere variable vom Typ FragmentContinentsBinding
     private lateinit var binding: FragmentContinentsBinding
 
-    private val viewModel: MainViewModel by activityViewModels()
+    private lateinit var gameMode: String
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        arguments?.let {
 
-    //in der onCreateView wird das layout grob erstellt, container, größe etc
+            // Ressourcen-ID des Kontinents aus den übergebenen Argumenten erhalten
+            gameMode = it.getString("gameMode")!!
+        }
+    }
+
+    // In der onCreateView wird das layout grob erstellt, container, größe etc
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        //hier setzten/laden wir auf die leere erstellte variable das richtige Layout
+        // Hier setzten/laden wir auf die leere erstellte variable das richtige Layout
         binding = DataBindingUtil.inflate(inflater, R.layout.fragment_continents, container, false)
         return binding.root
     }
 
-    //in der onViewCreated greifen wir auf das layout zu und befüllen es mit den korrekten Daten
+    // In der onViewCreated greifen wir auf das layout zu und befüllen es mit den korrekten Daten
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
 
         // RecyclerView vom Layout wird mit dem Code verknüpft
@@ -38,13 +46,13 @@ class ContinentsFragment : Fragment() {
         // Hier laden wir die Liste aus der Datasource, in eine Variable
         val continents = Repository().loadContinents()
 
-        // ContinetsAdapter wird als Adapter mit der übergebenen liste festgelegt
-        recyclerView.adapter = ContinetsAdapter(continents, viewModel, requireContext())
+        // ContinetsAdapter wird als Adapter mit der übergebenen liste und dfestgelegt
+        recyclerView.adapter = ContinetsAdapter(continents, gameMode)
 
         // Verbessert die Performance bei fester größe
         recyclerView.setHasFixedSize(true)
 
-        //wir benutzen den navcontroller um unsere navigation aus dem nav_graph durchzuführen
+        // Wir benutzen den navcontroller um unsere navigation aus dem nav_graph durchzuführen
         binding.mcQuizCityArrowLeft.setOnClickListener {
             findNavController().navigate(ContinentsFragmentDirections.actionContinentsFragmentToGameSelectionFragment())
         }
@@ -52,6 +60,5 @@ class ContinentsFragment : Fragment() {
         binding.mcContinentsHome.setOnClickListener {
             findNavController().navigate(ContinentsFragmentDirections.actionContinentsFragmentToHomeFragment())
         }
-
     }
 }
