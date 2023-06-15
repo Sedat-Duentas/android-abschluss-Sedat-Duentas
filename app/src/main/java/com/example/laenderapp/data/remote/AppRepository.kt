@@ -31,14 +31,6 @@ class AppRepository(private val api: CountryApi, private val database: Continent
     val oceaniaCountries: LiveData<List<Country>> =
         database.continentsDatabaseDao.getAllCountriesByContinent("oceania")
 
-    /*val europeCountries: List<Country> = database.continentsDatabaseDao.getAllCountriesByContinent("europe")
-    val asiaCountries: List<Country> = database.continentsDatabaseDao.getAllCountriesByContinent("asia")
-    val africaCountries: List<Country> = database.continentsDatabaseDao.getAllCountriesByContinent("africa")
-    val northAmericaCountries: List<Country> = database.continentsDatabaseDao.getAllCountriesByContinent("northAmerica")
-    val southAmericaCountries: List<Country> = database.continentsDatabaseDao.getAllCountriesByContinent("southAmerica")
-    val oceaniaCountries: List<Country> = database.continentsDatabaseDao.getAllCountriesByContinent("oceania")
-*/
-
     suspend fun getContinents() {
         withContext(Dispatchers.IO) {
             try {
