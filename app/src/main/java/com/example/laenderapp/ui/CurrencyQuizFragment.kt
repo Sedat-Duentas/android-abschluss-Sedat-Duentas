@@ -21,6 +21,7 @@ import com.example.laenderapp.databinding.FragmentQuizBinding
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 
+// Für Kommentare siehe FlagQuizFragment
 class CurrencyQuizFragment: Fragment() {
     private lateinit var binding: FragmentQuizBinding
     private val viewModel: MainViewModel by activityViewModels()

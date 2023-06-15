@@ -22,7 +22,8 @@ class ResultFragment : Fragment() {
     // Die Instanz des MainViewModel, welches Zugriff auf die Daten und Funktionen des ViewModels bietet.
     private val viewModel: MainViewModel by activityViewModels()
 
-    // Die Argumente, die beim Navigieren zu diesem Fragment übergeben wurden. Sie werden durch navArgs() initialisiert und ermöglichen den Zugriff auf die übergebenen Werte.
+    // Die Argumente, die beim Navigieren zu diesem Fragment übergeben wurden.
+    // Sie werden durch navArgs() initialisiert und ermöglichen den Zugriff auf die übergebenen Werte.
     private val args: ResultFragmentArgs by navArgs()
 
     // In der onCreateView wird das layout grob erstellt, container, größe etc

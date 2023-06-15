@@ -9,7 +9,8 @@
     <fragment
         android:id="@+id/homeFragment"
         android:name="com.example.laenderapp.ui.HomeFragment"
-        android:label="HomeFragment" >
+        android:label="HomeFragment"
+        tools:layout="@layout/fragment_home">
         <action
             android:id="@+id/action_homeFragment_to_gameSelectionFragment"
             app:destination="@id/gameSelectionFragment" />
@@ -22,11 +23,15 @@
         <action
             android:id="@+id/action_homeFragment_to_currencyQuizFragment"
             app:destination="@id/currencyQuizFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_cityQuizFragment"
+            app:destination="@id/cityQuizFragment" />
     </fragment>
     <fragment
         android:id="@+id/gameSelectionFragment"
         android:name="com.example.laenderapp.ui.GameSelectionFragment"
-        android:label="GameSelectionFragment" >
+        android:label="GameSelectionFragment"
+        tools:layout="@layout/fragment_game_selection">
         <action
             android:id="@+id/action_gameSelectionFragment_to_continentsFragment"
             app:destination="@id/continentsFragment" />
@@ -37,7 +42,8 @@
     <fragment
         android:id="@+id/continentsFragment"
         android:name="com.example.laenderapp.ui.ContinentsFragment"
-        android:label="ContinentsFragment" >
+        android:label="ContinentsFragment"
+        tools:layout="@layout/fragment_continents" >
         <action
             android:id="@+id/action_continentsFragment_to_quizFragment"
             app:destination="@id/quizFragment" />
@@ -53,6 +59,9 @@
         <argument
             android:name="gameMode"
             app:argType="string" />
+        <action
+            android:id="@+id/action_continentsFragment_to_cityQuizFragment"
+            app:destination="@id/cityQuizFragment" />
     </fragment>
     <fragment
         android:id="@+id/quizFragment"
@@ -75,7 +84,8 @@
     <fragment
         android:id="@+id/logFragment"
         android:name="com.example.laenderapp.ui.LogFragment"
-        android:label="LogFragment" >
+        android:label="LogFragment"
+        tools:layout="@layout/fragment_log" >
         <action
             android:id="@+id/action_logFragment_to_homeFragment"
             app:destination="@id/homeFragment" />
@@ -83,7 +93,8 @@
     <fragment
         android:id="@+id/resultFragment"
         android:name="com.example.laenderapp.ui.ResultFragment"
-        android:label="ResultFragment" >
+        android:label="ResultFragment"
+        tools:layout="@layout/fragment_result" >
         <action
             android:id="@+id/action_resultFragment_to_homeFragment"
             app:destination="@id/homeFragment" />
@@ -97,7 +108,8 @@
     <fragment
         android:id="@+id/currencyQuizFragment"
         android:name="com.example.laenderapp.ui.CurrencyQuizFragment"
-        android:label="CurrencyQuizFragment" >
+        android:label="CurrencyQuizFragment"
+        tools:layout="@layout/fragment_quiz" >
         <argument
             android:name="continentNameRessourceId"
             app:argType="integer" />
@@ -107,5 +119,20 @@
         <action
             android:id="@+id/action_currencyQuizFragment_to_homeFragment"
             app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/cityQuizFragment"
+        android:name="com.example.laenderapp.ui.CityQuizFragment"
+        android:label="CityQuizFragment"
+        tools:layout="@layout/fragment_quiz" >
+        <action
+            android:id="@+id/action_cityQuizFragment_to_resultFragment"
+            app:destination="@id/resultFragment" />
+        <action
+            android:id="@+id/action_cityQuizFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+        <argument
+            android:name="continentNameRessourceId"
+            app:argType="integer" />
     </fragment>
 </navigation>

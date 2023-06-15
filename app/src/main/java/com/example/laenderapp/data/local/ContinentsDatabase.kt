@@ -5,12 +5,6 @@ import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
 import com.example.laenderapp.data.datamodels.Country
-import com.example.laenderapp.data.datamodels.CountryAfrica
-import com.example.laenderapp.data.datamodels.CountryAsia
-import com.example.laenderapp.data.datamodels.CountryEurope
-import com.example.laenderapp.data.datamodels.CountrynorthAmerica
-import com.example.laenderapp.data.datamodels.Countryoceania
-import com.example.laenderapp.data.datamodels.CountrysouthAmerica
 import com.example.laenderapp.data.datamodels.QuizResult
 
 @Database(entities = [

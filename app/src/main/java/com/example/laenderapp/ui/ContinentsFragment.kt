@@ -16,12 +16,15 @@ class ContinentsFragment : Fragment() {
     // Wir nutzen binding für unser fragment und deklarieren eine leere variable vom Typ FragmentContinentsBinding
     private lateinit var binding: FragmentContinentsBinding
 
+    // Hier wird eine leere Variable erstellt die später befüllt wird
     private lateinit var gameMode: String
+
+    //In der onCreateView wird das layout grob erstellt, container, größe etc
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         arguments?.let {
 
-            // Ressourcen-ID des Kontinents aus den übergebenen Argumenten erhalten
+            // Ressourcen-ID des gameMode aus den übergebenen Argumenten erhalten
             gameMode = it.getString("gameMode")!!
         }
     }
@@ -46,7 +49,7 @@ class ContinentsFragment : Fragment() {
         // Hier laden wir die Liste aus der Datasource, in eine Variable
         val continents = Repository().loadContinents()
 
-        // ContinetsAdapter wird als Adapter mit der übergebenen liste und dfestgelegt
+        // ContinetsAdapter wird als Adapter mit der übergebenen liste und dem Kontinent festgelegt
         recyclerView.adapter = ContinetsAdapter(continents, gameMode)
 
         // Verbessert die Performance bei fester größe

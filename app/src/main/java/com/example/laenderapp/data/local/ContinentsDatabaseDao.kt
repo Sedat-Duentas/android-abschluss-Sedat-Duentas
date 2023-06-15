@@ -6,7 +6,6 @@ import androidx.room.Insert
 import androidx.room.OnConflictStrategy
 import androidx.room.Query
 import com.example.laenderapp.data.datamodels.Country
-import com.example.laenderapp.data.datamodels.CountryEurope
 import com.example.laenderapp.data.datamodels.QuizResult
 
 @Dao

@@ -6,6 +6,7 @@ import androidx.navigation.findNavController
 import androidx.recyclerview.widget.RecyclerView
 import com.example.laenderapp.data.datamodels.Adaptermodel
 import com.example.laenderapp.databinding.ItemLayoutBinding
+import com.example.laenderapp.ui.CityQuizFragmentDirections
 import com.example.laenderapp.ui.ContinentsFragmentDirections
 
 // Die Liste von Kontinenten wird übergeben und RecyclerView wird vorbereitet
@@ -26,11 +27,11 @@ class ContinetsAdapter (
 
     // Hier wird die "leere" liste mit den korrekten daten befüllt
     override fun onBindViewHolder(holder: ItemViewHolder, position: Int) {
-        val item = dataset[position]
-        
-        holder.binding.ivItem.setImageResource(item.imageResource)
-        holder.binding.tvItem.setText(item.stringResource)
+        val item = dataset[position] // Das Kontinent wird bestimmt
+        holder.binding.ivItem.setImageResource(item.imageResource) // Bild vom Kontinent wird geladen
+        holder.binding.tvItem.setText(item.stringResource) // Text vom Kontinent wird geladen
 
+        // Hier wird die Information, welche Spielart als Argument übergeben wird, mitgegeben
         holder.binding.mcItem.setOnClickListener {
             when (gameMode) {
                 "currency" -> {
@@ -42,19 +43,13 @@ class ContinetsAdapter (
                     holder.binding.mcItem.findNavController().navigate(action)
                 }
                 "city" -> {
-                    /*val action = ContinentsFragmentDirections.actionContinentsFragmentToQuizFragment(item.stringResource)
-                    holder.binding.mcItem.findNavController().navigate(action)*/
+                    val action = ContinentsFragmentDirections.actionContinentsFragmentToQuizFragment(item.stringResource)
+                    holder.binding.mcItem.findNavController().navigate(action)
                 }
                 else -> {
                     // Fallback-Verhalten, falls der gameMode unbekannt ist
                 }
             }
-
-
-            /*holder.binding.mcItem.findNavController()
-                .navigate(ContinentsFragmentDirections.actionContinentsFragmentToCurrencyQuizFragment(item.stringResource))
-                //actionContinentsFragmentToQuizFragment(item.stringResource))
-                // Hier wird die Information, welcher Kontinent als Argument übergeben wird, mitgegeben*/
         }
     }
 
