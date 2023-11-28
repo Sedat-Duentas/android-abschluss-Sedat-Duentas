@@ -1,5 +1,4 @@
-# GeoQuiz App  
-![geoquizlogo](https://github.com/Sedat-Duentas/GeoQuiz_IOS/assets/121946890/d4a4e16e-b773-4c28-a39b-7d1e5f5224ac)
+# GeoQuiz App
 
 Die GeoQuiz-App ist eine interaktive Anwendung, die dein Wissen über Flaggen, Städte und Währungen auf die Probe stellt. Teste dein geographisches Wissen und verbessere es, indem du Fragen zu verschiedenen Ländern der Welt beantwortest.
 
@@ -26,27 +25,6 @@ Dieses Android-Projekt wurde mit Kotlin in Android Studio entwickelt und verwend
 1. Klone das Repository: `git clone https://github.com/DeinBenutzername/GeoQuiz.git`
 2. Öffne das Projekt in Android Studio.
 3. Baue die App und führe sie auf einem Emulator oder einem physischen Gerät aus.
-
-## Screenshots
-
-<img width="341" alt="Home" src="https://github.com/Sedat-Duentas/GeoQuiz_IOS/assets/121946890/f236c655-3288-44cd-83ea-ad83ec2e1ca1">
-
-<img width="341" alt="Gameplay" src="https://github.com/Sedat-Duentas/GeoQuiz_IOS/assets/121946890/614c29dc-4602-4eb8-987d-28a1c15d0cd5">
-
-<img width="341" alt="Flag" src="https://github.com/Sedat-Duentas/GeoQuiz_IOS/assets/121946890/7f860ef4-e968-48c4-927b-d848e21a0369">
-
-<img width="341" alt="City" src="https://github.com/Sedat-Duentas/GeoQuiz_IOS/assets/121946890/4dedbfd4-431c-4d18-8cdd-39c2a2e8f0d8">
-
-<img width="341" alt="Currency" src="https://github.com/Sedat-Duentas/GeoQuiz_IOS/assets/121946890/1a19e5f9-3dbc-40e6-970f-e9a967b59379">
-
-<img width="341" alt="Score" src="https://github.com/Sedat-Duentas/GeoQuiz_IOS/assets/121946890/eb4b97ef-9681-430b-a842-202d9743be35">
-
-<img width="341" alt="List" src="https://github.com/Sedat-Duentas/GeoQuiz_IOS/assets/121946890/bc2c9e13-3e75-4d84-af9b-b03b63d9ad33">
-
-<img width="341" alt="Detail" src="https://github.com/Sedat-Duentas/GeoQuiz_IOS/assets/121946890/2d5b3580-5e04-49c7-bb47-49b62bfcac7a">
-
-## Video
-https://github.com/Sedat-Duentas/GeoQuiz_IOS/assets/121946890/89c04ceb-23e8-4e02-9602-9c2c44612199
 
 ## Lizenz
 
